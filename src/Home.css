@@ -1,0 +1,29 @@
+.map{
+    margin: 0;
+    width: 100%;
+    height:100vh;
+}
+.heding{
+    margin-left: 0%;
+    padding-left:0%;
+}
+.clogo{
+    margin-left: 2%;
+    height: 65px;
+    width: 70px;
+}
+@media screen and (max-width: 1199px) {
+    .map{
+        width: 100%;
+        height:90vh
+ }
+ .clogo{
+    margin-left: 3%;
+    height: 65px;
+    width: 70px;
+}
+.heding{
+     margin-right: 0%;
+     margin-right: 0%;
+}
+}

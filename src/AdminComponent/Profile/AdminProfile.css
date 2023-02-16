@@ -1,0 +1,27 @@
+.div-main{
+    width: 20%;
+    padding-top: 15%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    word-spacing: 1%;
+   }
+
+.text-niput{
+    margin-top: 5%;
+    width:100%;
+    font-weight: 500;
+    padding: 2%;
+}
+.vprofile-main{
+    margin-left: 50%;
+   }
+@media screen and (max-width: 1199px) {
+   .div-main{
+    margin-top: 10%;
+    width: 90%;
+    word-spacing: 1%;
+    padding: 10%;
+   }
+   .vprofile-main{
+    margin-left: 15%;
+   }
+}

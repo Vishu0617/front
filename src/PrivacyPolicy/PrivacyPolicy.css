@@ -1,0 +1,19 @@
+.policy-terms-box {
+    box-shadow: 0px 0px 15px rgba(1, 1, 1, 0.1);
+    height: 100%;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.policy-condition {
+    padding: 60px 0;
+}
+
+.policy-terms-box h4 {
+    font-size: 20px;
+    color: #000;
+    margin: 15px 0;
+}
+.policy-terms-box p{
+    text-align: justify;
+}
