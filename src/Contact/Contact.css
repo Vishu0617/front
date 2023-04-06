@@ -1,0 +1,144 @@
+.contact-info {
+    padding: 75px 0 50px;
+}
+
+.contact-i {
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+    border-radius: 8px;
+    background-color: #003e6d3d;
+    text-align: center;
+    font-size: 38px;
+    padding: 3px;
+    color: #003d6c;
+    line-height: 64px;
+}
+
+.contact-contact {
+    flex: 1;
+}
+
+.contact-wrapper {
+    color: #000;
+}
+
+.contact-detail {
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    -webkit-transition: 500ms all ease;
+    transition: 500ms all ease;
+    border-top: 5px solid #f4f4f4;
+}
+
+.contact-contact h3 {
+    font-size: 22px;
+}
+
+.contact-contact a {
+    color: #888888;
+}
+.contact-contact a:hover {
+    color: #003d6c;
+}
+
+.contact-text {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    background-color: #313030;
+    padding: 52px 40px;
+}
+
+.input-feild {
+    background-color: #fff !important;
+    height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 2%;
+    outline: none;
+    border-radius: 4px;
+}
+
+.contact-form h3 {
+    font-size: 31px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #000;
+}
+
+.form-outline .form-control~.form-label {
+    top: 5px;
+}
+
+.txt-area {
+    background-color: #fff !important;
+    height: 235px !important;
+    margin-bottom: 30px;
+}
+
+.form-outline .form-control:focus~.form-label,
+.form-outline .form-control.active~.form-label {
+    transform: translateY(-1.4rem) translateY(0.1rem) scale(0.8);
+}
+
+.send-btn {
+    background-color: #003d6c;
+    color: #fff !important;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+}
+
+.contact-detail:hover {
+    border-top: 5px solid #003d6c;
+}
+.map-address{
+    background-color: #ddd;
+}
+.map-address img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.map-block{
+    padding-bottom: 70px;
+}
+.c-link{
+    text-decoration:none;
+    color: rgb(218, 231, 31);
+    font-weight: 500;
+    padding-left: 5px;
+}
+.map{
+    border: 0;
+}
+@media screen and (max-width: 991px) {
+    .contact-form{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .contact-info{
+        padding: 45px 0 40px;
+    }
+    .map-address img{
+        height: auto;
+    }
+    .map-block {
+        padding-bottom: 40px;
+      }
+      .contact-form {
+        background-color: #f4f4f4;
+        padding: 40px 25px;
+      }
+      .contact-i{
+        margin-right: 20px;
+      }
+      .map{
+        border: 0;
+    }
+}

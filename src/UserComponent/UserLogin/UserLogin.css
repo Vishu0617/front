@@ -1,0 +1,274 @@
+
+::-webkit-input-placeholder { 
+    color: rgb(0, 0, 0);
+  }
+  
+  :-ms-input-placeholder { 
+    color: rgb(0, 0, 0);
+  }
+  
+  ::placeholder {
+    color: rgb(0, 0, 0);
+  }
+/* .user-login-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-bottom: -2%;
+    padding-left: 0px;
+}
+.user-login-main{
+    width: 50%;
+    backdrop-filter: blur(50px);
+    height: 80vh;
+}
+.errorMassage{
+    color: red;
+    border-radius: 3px;
+    padding:2%;
+    width: 100%;
+}
+.user-signup-main{
+    width: 40%;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    box-shadow: 25px 
+}
+.user-login{
+    margin-left: 5%;
+    margin-right: -25%;
+}
+.user-login-input{
+  background: transparent;
+  color: white;
+  width: 70%;
+}
+.login-input{
+    margin-top: 5%;
+    width:60%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2%;
+}
+
+.input-main{
+    width:500px;
+    margin-right: 0%;
+}
+
+.inputsignup{
+    margin-left: 3%;
+    border: none;
+    width: 90%;
+    outline: none;
+}
+.user-div-mid{
+    margin-left: 0%;
+
+}
+.submit{
+    margin: 3%;
+    margin-left: -30%;
+
+}
+.submit-divr{
+    margin-right: 30%;
+}
+.user-login-body{
+    margin-top: 5%;
+   background-size: cover;
+}
+.user-login-video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    object-fit: cover;
+}
+@media screen and (max-width: 1199px) {
+    .user-login-video{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width:100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+   .user-signup-main{
+    color: white;
+    margin-top: 30%;
+    width: 95%;
+    backdrop-filter:unset;
+    background-color: rgb(139, 124, 139);
+   }
+   .input-main{
+    margin-right: -10%;
+    width:700px;
+}
+  .user-div-mid{
+    margin-left: 2%;
+    width: 100%;
+  }
+  .inputsignup{
+    margin-left: -3%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.user-login-body{
+  height: 40vh;
+  margin-top: 5%;
+}
+  
+}
+ */
+
+/* new login page design css */
+#intro {
+    background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+    height: 100vh;
+  }
+ 
+  /* Height for devices larger than 576px */
+ .form-body {
+    margin-top: 0%;
+    margin-left: 0%;
+ }
+ .inputlogin{
+    border: none;
+    width: 90%;
+    outline: none;
+}
+.linkDiv{
+    margin-top: 4%;
+}
+  .mask1{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+  }
+  .user-login-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-bottom: -2%;
+    padding-left: 0px;
+}
+  .navbar .nav-link {
+      color: #fff !important;
+    }
+.new-login-form{
+   padding-top: 3%; 
+   padding-right: 3%; 
+   padding-left: 3%; 
+   margin-top: 0%;
+}
+.bg-image-login {
+    animation: changeBg 30s infinite;
+    height: 100vh;
+    background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+}
+@keyframes changeBg {
+    0%{
+        /* background-color: #ee6055; */
+        background-image: url(../../img/icon/bg-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(-4);
+    }
+    25%{
+        /* background-color: #60d394; */
+        background-image: url(../../img/icon/bg-2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(-4);
+
+    }
+    50%{
+        /* background-color: #aaf683; */
+        background-image: url(../../img/icon/bg-3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       filter: brightness(-4);
+    }
+    75%{
+        /* background-color: #FFd97d; */
+        background-image: url(../../img/icon/bg-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(-4);
+    }
+    100%{
+        /* background-color: #FF9b85; */
+        background-image: url(../../img/icon/bg-5.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(-4);
+    }
+}
+
+.social-icon{
+    height: 30px;
+    width: 30px;
+    transition: 0.2s;
+}
+.social-icon:hover{
+    scale: 1.3;
+    transition-delay: 0.2s; 
+}
+
+.instgram{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 40px;
+    color: #fff;
+    line-height: 250px;
+    vertical-align: middle;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+@media (max-width: 1199px) {
+    #intro {
+        background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+        height: 100vh;
+    }
+    .mask{
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+    }
+    .form-body {
+        margin-top: 0%;
+        margin-left: 0%;
+     }
+    .new-login-form{
+        margin-left: 3%;
+        margin-right: 6%;
+    }
+    .social-icon{
+        height: 30px;
+        width: 30px;
+        transition: 0.2s;
+    }
+    .social-icon:hover{
+        scale: 1.3;
+        transition-delay: 0.2s; 
+    }
+    
+    .instgram{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 40px;
+        color: #fff;
+        line-height: 250px;
+        vertical-align: middle;
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    }
+    
+  }

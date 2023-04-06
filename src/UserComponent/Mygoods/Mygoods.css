@@ -1,0 +1,72 @@
+.main{
+    width: 50%;
+}
+.goods-main{
+    background-color: hsla(0, 43%, 99%, 0.979);
+    font-weight: 500;
+    /* background-image: linear-gradient(  rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+    /* backdrop-filter: blur(300px); */
+}
+.paybutton{
+    background-color:  hsla(0, 3%, 12%, 0.979);
+    color:hsla(0, 43%, 99%, 0.979);
+    font-weight: 500;
+    /* background-image:linear-gradient(  rgb(0, 86, 184),rgb(147, 179, 228),rgb(25, 49, 185)); */
+}
+.paybutton:hover{
+    /* scale: 1.1; */
+    background-image:linear-gradient(  rgb(86, 136, 6),rgb(86, 136, 6),rgb(86, 136, 6));
+    box-shadow: 0 4px 8px 0 rgba(255, 242, 242, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+}
+.payCancel{
+    background-color:  hsla(0, 3%, 12%, 0.979);
+    color:hsla(0, 43%, 99%, 0.979);
+    font-weight: 500;
+}
+.payCancel:hover{
+    background-image:linear-gradient(  rgb(223, 64, 58),rgb(223, 64, 58),rgb(223, 64, 58));
+    box-shadow: 0 4px 8px 0 rgba(255, 242, 242, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+}
+.dialog{
+    backdrop-filter: blur(5px);
+}
+.goods-main-tr{
+    color: black;
+    font-weight: 500;
+}
+.goods-main-tr:hover{
+    background-color: #b3b0b0;
+}
+.goods-link{
+    font-weight: 500;
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+.triptable{
+    background: transparent;
+}
+.paymentHistory{
+    text-decoration: none;
+    color: black;
+}
+.paymentHistory:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 1199px) {
+    .main{
+        width: 90%;
+    }
+    .add-main{
+        margin-right: 5%;
+        margin-bottom: 4%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+    .goods-link{
+        font-weight: 500;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-bottom: 3%;
+    }
+}

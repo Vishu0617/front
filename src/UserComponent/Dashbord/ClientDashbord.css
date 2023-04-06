@@ -1,0 +1,182 @@
+ /*----------- Search-box css start -----------*/
+
+.clent-search-btn {
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  background-color: #2907e9;
+  color: #fff !important;
+}
+.clent-search-btn:hover {
+  background-color:rgb(61, 9, 109);
+
+}
+
+.client-main-search {
+  position: absolute;
+  width: 100%;
+  margin-top: -315px;
+}
+
+.cleint-search-box {
+  padding: 20px;
+  background-color:rgb(159, 159, 219);
+  position: relative;
+  z-index: 9;
+  border-radius: 8px;
+}
+.client-search-text{
+  text-align: center;
+  height: 30px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 90%;
+  outline: none;
+}
+.client-inputBox{
+  background-color: #fff;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+ 
+}
+.client-dashbord{
+  /* background-image: linear-gradient( rgb(47, 88, 205),rgb(55, 149, 189),rgb(78, 49, 170)); */
+  /* background-image: linear-gradient( rgb(218, 203, 203),rgb(218, 203, 203),rgb(218, 203, 203)); */
+  background-size: cover;
+  background-color:rgba(150, 148, 148, 0.719);
+  padding: 45px 0;
+  padding-top: 2%;
+  margin-top: 0%;
+  height: 125vh;
+}
+
+.dashbord{
+  background-image: linear-gradient(  rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224));
+}
+@media screen and (max-width: 1199px) {
+  .client-dashbord{
+    background-image: linear-gradient( rgb(47, 88, 205),rgb(55, 149, 189),rgb(78, 49, 170));
+    padding: 45px 0;
+    height: 150vh;
+  }
+.cleint-search-box {
+  background-color: rgba(255, 2555, 2555, 0.5);
+  margin-top: -22%;
+  padding: 30px;
+  position: relative;
+  z-index: 9;
+  border-radius: 8px;
+}
+.client-inputBox{
+  background-color: #ffffff;
+  padding-left: 6%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 3%;
+}
+}
+
+/*  */
+
+ .client-main-div1{
+  padding-left: 8%;
+  padding-right: 0%;
+  /* background-color: hsla(0, 43%, 99%, 0.979); */
+  /* background-image: linear-gradient(  rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+} 
+.client-main-div{
+  background-color: hsla(0, 43%, 99%, 0.979);
+  /* background-image: linear-gradient(  rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+}
+.client-trips{
+   margin-left:3%;
+   margin-right:3%;
+   padding-left: 1%;
+   padding-right: 1%;
+   color: white;
+   background-color:#352f2f;
+   transition:0.3s;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+  }
+  .client-trips:hover {
+  scale: 1.2;
+  cursor: pointer;
+  transition-delay: 0.3s;
+}
+.lable1{
+  margin-top: 8%;
+  font-weight: 500;
+}
+.client-vehicale{
+   margin-left: 3%;
+   margin-right: 3%;
+   padding-left: 1%;
+   padding-right: 1%;
+   color: #fff;
+   background-color: #2e2c2c;
+   transition:0.3s;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+
+}
+.client-vehicale:hover{
+  scale: 1.2;
+  cursor: pointer;
+  transition-delay: 0.3s;
+}
+.my-fb{
+   margin-left: 3%;
+   margin-right: 3%;
+   padding-left: 1%;
+   padding-right: 1%;
+   color: #fff;
+   background-color: #2e2c2c;
+   transition:0.3s;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+
+}
+.my-fb:hover{
+  scale: 1.2;
+  cursor: pointer;
+  transition-delay: 0.3s;
+}
+.valueTrips{
+ text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .client-main-div1{
+     margin-left: 2%;
+     margin-right: 2%;
+     height: 80vh;
+  } 
+  .client-trips{
+    margin-right:0%;
+    padding-right: 90%;
+    margin-left:0%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color: white;
+    background-color:#352f2f;
+    transition:0.3s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+   }
+   .client-trips:hover {
+   scale: 1.1;
+   cursor: pointer;
+   transition-delay: 0.3s;
+ }
+ .lable1{
+  padding-right:60px;   
+  margin-top: -10%;
+  margin-left: 8%; 
+  font-weight: 500;
+}
+.valueTrips{
+  text-align: center;
+ }
+ 
+}

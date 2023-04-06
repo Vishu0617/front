@@ -1,0 +1,101 @@
+.action{
+    margin: 5%;
+}
+
+.goods-body {
+    padding-top: 5%;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+    height: 100vh;
+}
+.payment-histy-link{
+    text-decoration: none;
+    font-weight: 500;
+    width: 120px;;
+}
+.goods-table{
+    margin-top: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: hsla(0, 43%, 99%, 0.979);
+  color : hsla(0, 3%, 12%, 0.979); 
+}
+.Goods-main{
+  margin-right: 1%;
+  margin-left: 1%;
+  background-color:rgba(0, 238, 255, 0.664) ;
+}
+.goods-status-body{
+    margin-top: 0%;
+    padding-top: 5%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+
+  }
+.goods-status-table{
+  margin-top: 10%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+.goods-status-form{
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 5%;
+}
+.goods-status-value{
+  padding: 3%;
+  padding-left: 3%;
+}
+.goods-status-buutton{
+    margin-top: 10%;
+}
+.paymentHistyBody{
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+@media screen and (max-width: 1199px) {
+    .goods-status-body{
+        margin-top: 10%;
+        height: 100vh;
+      }
+    .goods-status-table{
+        margin-top: 50%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .goods-status-value{
+        padding: 3%;
+      }
+    .goods-status-form{
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-bottom: 5%;
+    }
+    .goods-body {
+        padding-top: 5%;
+        background-color: rgba(110, 179, 184, 0.973);
+        height: 100vh;
+        padding-bottom: 2%;
+    }
+    .goods-table{
+        cursor: pointer;
+        margin-top: 15%;
+        margin-right: 1%;
+        margin-left: 1%;
+        background-color: hsla(0, 43%, 99%, 0.979);
+        color : hsla(0, 3%, 12%, 0.979); 
+    }
+    .paymentHistyBody{
+      margin-top: 15%;
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+    .payment-histy-link{
+      margin-top: -4%;
+      margin-left: -2%;
+      margin-bottom: 4%;
+      text-decoration: none;
+      font-weight: 500;
+      width: 120px;;
+  }
+}

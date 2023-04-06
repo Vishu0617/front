@@ -1,0 +1,38 @@
+.payment-main{
+    width:500px;
+    margin-right: 0%;
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+    /* background-image: linear-gradient( rgb(253, 253, 253),rgb(187, 178, 178),rgb(156, 201, 201)); */
+}
+.otimaindiv{
+    width: 40%;
+}
+.otpmain{
+    width: 50%;
+    margin-left: 22%;
+}
+.py-histry{
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+    /* background-image: linear-gradient(  rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+}
+.otimaindiv{
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+}
+@media screen and (max-width: 1199px) {
+    
+    .payment-main{
+        margin-right: 4%;
+        margin-left: 3%;
+        width:95%;
+        background-color:rgb(158, 142, 173);
+    }
+    .otimaindiv{
+        width: 100%;
+    }
+    .otimaindiv{
+        width: 90%;
+    }
+}

@@ -1,0 +1,20 @@
+.upload{
+    border-radius: 100%;
+    width: 50%;
+    height: 25%;
+    margin-left: 15%;
+}
+.clientEditDiv{
+    margin-left: -4%;
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+    
+}
+
+@media screen and (max-width: 1199px) {
+    .clientEditDiv{
+      margin-left: -2%;
+      background-color: hsla(0, 43%, 99%, 0.979);
+      color : hsla(0, 3%, 12%, 0.979); 
+    }
+}

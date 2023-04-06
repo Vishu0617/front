@@ -1,0 +1,148 @@
+.user-detail {
+    margin-top: 4.5%;
+    padding: 45px 0;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+
+}
+.user-table{
+  margin-left: 1%;
+  margin-right: 1%;
+  font-weight: 500;
+}
+
+.table-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.table-box {
+    border-radius: 4px;
+    box-shadow: 0 2px 10px -1px rgba(69, 90, 100, 0.3019607843) !important;
+    padding: 30px;
+    margin-top: 15px;
+  }
+  .table-box thead{
+    background-color: #003d6c;
+    color: #fff;
+   
+  }
+  .table-box .table th{
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .table-box .table th, .table-box .table td{
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  
+  .Trips{
+    margin: 2%;
+    width: 20%;
+    height: 22%;
+  }
+  .plink{
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .plink:hover{
+    color: rgb(70, 84, 146);
+    text-decoration: underline;
+  }
+  
+.bio-info{
+  margin-left:10%;
+  margin-top: -5%;
+  margin-bottom: -20%;
+  margin-right: -5%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.userSearcrh{
+  width: 20%;
+  padding-top: 0.5%;
+  border: none;
+  outline: none;
+  padding-bottom: 0.5%;
+  margin-bottom: 3%;
+}
+.edit-main{
+  width: 50%;
+  padding-top: 10%;
+  background-color: hsla(0, 43%, 99%, 0.979);
+  color : hsla(0, 3%, 12%, 0.979); 
+}
+.edit-mid{
+  margin-left: 6%;
+}
+
+  .editbody{
+   margin-top: 4%;
+   padding: 45px 0;
+   background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+  }
+.inputsignup{
+  margin-left: 3%;
+  border: none;
+  font-weight: 500;
+  width: 90%;
+  outline: none;
+  background: transparent;
+}
+.user-data-edit{
+  margin-left: 0%;
+  background-color: hsla(0, 43%, 99%, 0.979);
+  color : hsla(0, 3%, 12%, 0.979); 
+}
+
+@media screen and (max-width: 1199px) {
+  .signup-main{
+    width: 90%;
+   }
+   .user-detail {
+    margin-top: 14%;
+    padding: 45px 0;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+  }
+  .editbody{
+    margin-top: 0%;
+    padding: 0px 0;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    height: 100%;
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+ }
+ .edit-main{
+  width: 90%;
+  padding-top: 0%;
+  height: 100%;
+  background-color: hsla(0, 43%, 99%, 0.979);
+  color : hsla(0, 3%, 12%, 0.979); 
+}
+   .user-table{
+    margin-left: 2%;
+    margin-right: 2.5%;
+    font-weight: 500;
+  }
+  .userSearcrh{
+    width: 80%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-bottom: 3%;
+    border-radius: 2% 2% 2% 2%;
+  }
+  .card-info{
+     margin-top: 2%;
+  }
+   .bio-info{
+    margin-top: 10%;
+    margin-left:0%;
+    margin-bottom: -15%;
+    margin-right: 0%;
+  }
+  .input-main{
+    margin-left: 0%;
+    background-color:rgba(0, 238, 255, 0.664) ;
+  }
+}

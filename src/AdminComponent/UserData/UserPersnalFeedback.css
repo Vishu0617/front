@@ -1,0 +1,77 @@
+ .feed-main{
+    margin-top: 0%;
+    margin-bottom: 5%;
+  }
+  .feed-body{
+   padding: 45px 0px;
+  }
+  .persnal-feed-body{
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+
+  }
+ .feed-input{
+    padding: 2%;
+    margin-left: 3%;
+    border: none;
+    background-color: #adb5bd;
+    width: 90%;
+    outline: none;
+ }
+ .user-data{
+   margin-top: 0%;
+   padding-top: 2%;
+   padding-left: 3%;
+   padding-right: 3%;
+   padding-bottom: 2%;
+ }
+ .feedback{
+      margin-top: 2%;
+      margin-left: 3%;
+      margin-bottom: 2%;
+      margin-right: 3%;
+    padding-left: -3%;
+    background-color:rgba(0, 238, 255, 0.664) ;
+    color: rgb(0, 0, 0);
+
+ }
+ .fmessage{
+    padding-left: 3%;
+    padding-top: 3%;
+    padding-top: 0%;
+    margin-bottom: 0%;
+ }
+ .feed-body{
+   margin-top: -4%;
+   padding: 45px 0;
+   background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+
+ }
+ @media screen and (max-width: 1199px) {
+      .user-data{
+        margin-top: 0%;
+        padding-top: 30%;
+      }
+      .persnal-feed-body{
+        margin-top: 12%;
+        margin-right: 2%;
+        margin-left: 2%;
+        background-color:rgba(0, 238, 255, 0.664) ;
+      }
+      .feedback{
+         margin-top: 0%;
+      }
+      .feed-main{
+        margin-top: 0%;
+        margin-bottom: 5%;
+      }
+     .feed-input{
+        padding: 2%;
+        margin-left: 3%;
+        background-color: cadetblue;
+        width: 90%;
+        outline: none;
+     }
+ }

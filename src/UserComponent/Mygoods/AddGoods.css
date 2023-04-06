@@ -1,0 +1,49 @@
+::-webkit-input-placeholder { 
+  color: rgb(48, 44, 44);
+}
+
+:-ms-input-placeholder { 
+  color: rgb(48, 44, 44);
+}
+
+::placeholder {
+  color: rgb(48, 44, 44);
+}
+.add-goods-main{
+   margin-right: 15%;
+   margin-left: 15%;
+   background-color: hsla(0, 43%, 99%, 0.979);
+   color: hsla(0, 3%, 12%, 0.979);
+ /* background-image: linear-gradient( rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+}
+.addGoods{
+  /* background-image:linear-gradient(  rgb(0, 86, 184),rgb(147, 179, 228),rgb(25, 49, 185)); */
+  background-color:hsla(0, 3%, 12%, 0.979);
+  color:  hsla(0, 43%, 99%, 0.979);
+  font-weight: 1000;
+}
+.addGoods:hover{
+  background-image: linear-gradient( rgb(14, 116, 233),rgb(14, 116, 233),rgb(14, 116, 233));
+  color:hsla(0, 43%, 99%, 0.979);
+  ;
+  /* box-shadow: 0 4px 8px 0 rgba(255, 242, 242, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ; */
+}
+
+.input-div{
+  word-spacing: 1px;
+  background: transparent;
+
+}
+
+  
+@media screen and (max-width: 1199px) {
+    .add-goods-main{
+      margin-right: 5%;
+      margin-left: 5%;
+      background-color: hsla(0, 43%, 99%, 0.979);
+      color: hsla(0, 3%, 12%, 0.979);
+     }
+     .add-goods{
+         padding: 4%;
+     }
+}

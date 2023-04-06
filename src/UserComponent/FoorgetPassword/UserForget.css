@@ -1,0 +1,48 @@
+.forget-body{
+    background-color:hsla(0, 43%, 99%, 0.979);
+    color:hsla(0, 3%, 12%, 0.979);
+    width: 50%;
+    height: 50vh;
+    margin-top: 10%;
+    font-weight: 500;
+}
+.forget-input{
+    margin-left: 0%;
+    border: none;
+    text-align: center;
+    width: 90%;
+    font-weight: 500;
+    background-color:hsla(0, 43%, 99%, 0.979);
+    color:hsla(0, 3%, 12%, 0.979);
+    outline: none;
+}
+.forget-main{
+    background: transparent;
+    color: white;
+    width: 50%;
+}
+.forg-btn{
+ margin-top: 10%;
+ background-color:hsla(0, 3%, 12%, 0.979);
+ color: hsla(0, 43%, 99%, 0.979);
+ font-weight: 500;
+}
+.forg-btn:hover{
+    background-color:hsla(108, 93%, 44%, 0.979);
+    color: hsla(0, 3%, 6%, 0.979);
+    font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+    .forget-body{
+        background-color:hsla(0, 43%, 99%, 0.979);
+        color:hsla(0, 3%, 12%, 0.979);
+        width: 90%;
+        margin-top: 10%;
+        font-weight: 500;
+    }
+    .forget-main{
+        background: transparent;
+        color: white;
+        width: 100%;
+    }
+}

@@ -1,0 +1,61 @@
+.link-hover{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(236, 233, 233);
+    font-weight: 500;
+    padding-left: 5px;
+  }
+  .logo{
+    padding-left: 20px;
+    padding-right: -20px;
+    height: 75px;
+    width: 75px;
+  }
+  .ahomeHeader{
+    background-image: linear-gradient(  rgb(201, 192, 192),rgb(192, 182, 192),rgb(201, 192, 192));
+    color: #2c2929;
+    padding-top: 0.5%;
+  }
+  .adminLink{
+    font-weight: 500;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    color: black;
+  }
+  .adminLink:hover{
+   color: rgb(252, 253, 255);
+   font-weight: 500;
+  }
+ .active{
+  color: #3f4dc9;
+  border: #000;
+  text-decoration: none;
+  font-weight: 500;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 4px;
+ }
+  @media screen and (max-width: 50%) { 
+    .link-hover{
+        font-weight: 500;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+  .admin-dash{
+    margin-left: 8%;
+    align-items: center;
+  }
+  }
+  @media screen and (max-width: 1199px) {
+    .ahomeHeader{
+      padding-top: 1%;
+      background-image: linear-gradient(  rgb(150, 150, 150),rgb(192, 182, 192),rgb(150, 150, 150));
+      width: 100%;
+      box-shadow: 0px 0px 0px 0px;
+    }
+  }
+  

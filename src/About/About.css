@@ -1,0 +1,596 @@
+.about-us {
+    padding: 95px 0;
+}
+
+.about-thumb-wrap {
+    position: relative;
+}
+
+.about-thumb-wrap .img-1 {
+    position: absolute;
+    left: -39px;
+    bottom: -53px;
+    z-index: -1;
+}
+
+.about-thumb-wrap .img-3 {
+    margin-left: 280px;
+    margin-bottom: -83px;
+    margin-top: -30%;
+    vertical-align: 0;
+}
+
+.about-thumb-wrap .exprience-wrap img {
+    margin-bottom: -15px;
+}
+
+.about-thumb-wrap .exprience-wrap {
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    right: -20px;
+    top: 17px;
+}
+
+.about-thumb-wrap .exprience-wrap .about-details {
+    background: url('../img/shape-2.png');
+    background-size: cover;
+    padding: 45px 37px;
+    background-position: center;
+    margin-top: 5px;
+}
+
+.img-2 {
+    width: 470px;
+    height: 470px;
+}
+
+.about-details h2 {
+    font-weight: bold;
+    font-size: 55px;
+    color: #013f6d;
+}
+
+.exprience-wrap p {
+    margin-bottom: 0;
+    color: #000;
+}
+
+.about-content {
+    padding-left: 55px;
+}
+
+.content-border-left {
+    border-left: 5px solid #013f6d;
+    padding-left: 15px;
+}
+
+.abt-inner-wrap li i {
+    color: #003d6c;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+.abt-inner-wrap li {
+    line-height: 40px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 119px;
+}
+
+.single-fact-wrap:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    height: 140px;
+    width: 4px;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    background: #003e6d;
+}
+
+.single-fact-wrap {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
+.single-fact-wrap p {
+    margin-bottom: 0;
+}
+
+.fact-area-bg {
+    background-color: #000;
+    padding: 55px 25px 15px;
+    color: #fff;
+    border-top: 5px solid #003e6d;
+}
+
+.single-fact-wrap h5 {
+    line-height: 31px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.single-fact-wrap h2 {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 57px;
+    margin-bottom: 8px;
+}
+
+.single-fact-wrap.after-none::after {
+    display: none;
+}
+
+.fect-area {
+    padding: 65px 0 40px;
+}
+
+/*----- our skill css start-----*/
+
+.progress-item .progress-bg .progress-rate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 3px;
+    background: #003e6d;
+    -webkit-transition: 2.5s;
+    transition: 2.5s;
+}
+
+.single-progressbar .title h6 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.single-progressbar .title .progress-count-wrap {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000;
+}
+
+.progress-item .progress-bg {
+    position: relative;
+    height: 6px;
+    border-radius: 3px;
+    background: #E0E0E0;
+}
+
+.skill-img2 {
+    margin-top: 90px;
+}
+
+.single-progressbar .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.progress-item {
+    margin-bottom: 28px;
+}
+
+.over-skill {
+    padding: 70px 0;
+}
+
+.skill-img1 img,
+.skill-img2 img {
+    height: 356px;
+}
+
+/*------- our skill css End -------*/
+
+/*---------- Need help start -------------*/
+
+.icon:after {
+    background: #fff;
+}
+
+.c-icon {
+    width: 50px;
+    height: 50px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    background: #fff;
+    line-height: 52px;
+    text-align: center;
+    color: #003e6c;
+    border-radius: 50%;
+    font-size: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.c-icon:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    opacity: 0.3;
+    height: 76px;
+    width: 76px;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.question-details h6 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.question-details h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 0;
+}
+
+.need-help {
+    width: 100%;
+    padding: 120px 0;
+    margin: 35px 0;
+    background-color: #000;
+    position: relative;
+}
+
+.help-box {
+    background-color: #003e6c;
+    color: #fff;
+    padding: 45px;
+    position: relative;
+}
+
+.help-box h2 {
+    color: #fff;
+}
+
+.question-details {
+    padding-left: 30px;
+}
+
+.wrorker-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 80%;
+}
+
+.wrorker-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-btn {
+    background-color: #30b959;
+    height: 50px;
+    width: 175px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #064780 !important;
+    line-height: 32px;
+}
+.contact-btn:hover{
+    background-color: yellowgreen;
+    color: #000;
+}
+
+.question-content {
+    margin: 23px 0 45px;
+    align-items: center;
+}
+
+/*----------- Need help end -------------*/
+
+/*------------- Review block start -------------*/
+.review-block {
+    padding: 65px 0;
+}
+
+.review-box {
+    background: rgba(8, 12, 36, 0.05);
+    border-radius: 5px;
+    padding: 20px 34px 40px 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.client-img {
+    padding-right: 15px;
+}
+
+.r-detail h5 {
+    font-size: 21px;
+    margin-bottom: 3px;
+    color: #000;
+}
+
+.review-block {
+    padding: 41px 0;
+}
+
+.review-box .r-text {
+    border-left: 5px solid #003e6c;
+    padding-left: 10px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    margin-top: 55px;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-height: 20px;
+    max-height: 123px;
+    line-height: 26px;
+}
+
+.qute-i span {
+    background-color: #013f6e;
+    width: 55px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    height: 55px;
+    line-height: 58px;
+    position: relative;
+    border-radius: 4px;
+    display: block;
+}
+
+.qute-i i {
+    transform: rotate(30deg);
+}
+
+.qute-i {
+    background-color: #fff;
+    width: 75px;
+    text-align: center;
+    height: 75px;
+    padding: 10px;
+    -webkit-transform: translate(0px, -39px);
+    transform: translate(0px, -39px);
+    margin-bottom: -9px;
+    border-radius: 4px;
+    transform: rotate(-30deg);
+    margin-top: -54px;
+    position: absolute;
+}
+
+.review-title {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 25px;
+}
+
+/*------------- Review block End --------------*/
+
+/*------------ Our team css start ------------*/
+.our-team-box {
+    position: relative;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 10px 30px rgb(7 36 95 / 6%);
+    box-shadow: 0px 10px 30px rgb(7 36 95 / 6%);
+    border-radius: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    margin-bottom: 30px;
+}
+
+.team-content h5 {
+    line-height: 35px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    margin-bottom: -2px;
+}
+
+.team-content p {
+    line-height: 24px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    margin-bottom: 0;
+}
+
+.hover-icon {
+    background: #003e6d;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    top: -50%;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.hover-icon::before {
+    content: "";
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background: rgba(0, 62, 109, 0.3);
+    border-radius: 50%;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    z-index: -1;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.team-content {
+    padding: 27px 30px 28px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+.social-area {
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    -webkit-transform: translate(50%, -100%);
+    transform: translate(50%, -100%);
+    transition: all 0.3s ease-in;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: -20px;
+    opacity: 0;
+}
+
+.social-area li a {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 15px rgb(7 36 95 / 15%);
+    box-shadow: 0px 4px 15px rgb(7 36 95 / 15%);
+    width: 40px;
+    line-height: 42px;
+    height: 40px;
+    color: #000;
+    border-radius: 50%;
+    display: block;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.hover-icon i {
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.our-team-box:hover {
+    background-color: #013E6D;
+    color: #fff;
+}
+
+.our-team-box:hover .team-content .hover-icon {
+    background: #fff;
+    color: #013E6D;
+}
+
+.our-team-box:hover .team-content .hover-icon::before {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.hover-icon:hover .social-area {
+    opacity: 1;
+}
+
+.hover-icon:hover .fa-plus {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    color: #013E6D;
+}
+
+.social-area li {
+    margin-top: 10px;
+}
+
+.social-area li:hover a {
+    background-color: #013E6D;
+    color: #fff;
+}
+
+.team-img img {
+    width: 100%;
+    height: 370px;
+    border-radius: 10px 10px 0 0;
+}
+
+.ourteam-title {
+    width: 600px;
+    margin: 0 auto 55px;
+}
+
+.our-team {
+    padding: 45px 0 25px;
+}
+
+/*------------ Our team css End ------------*/
+
+/*---------------- Media Query start-----------------*/
+@media screen and (max-width: 1199px) {
+    .about-thumb-wrap .img-3 {
+        display: none;
+    }
+    .about-us{
+        padding: -80px 0 30px;
+        padding-right: -5%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .r-detail h5{
+        font-size: 15px;
+    }
+    .img-2{
+        width: 100%;
+    }
+    .about-thumb-wrap .exprience-wrap{
+        right: -10px;
+    }
+    .progress-item .progress-bg .progress-rate {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:50%;
+        height: 100%;
+        border-radius: 3px;
+        background: #003e6d;
+        -webkit-transition: 2.5s;
+        transition: 2.5s;
+    }
+}
+.Freight{
+    width: 85%
+}
+@media screen and (max-width: 991px) {
+    .about-content {
+        margin-top: 80px;
+      }
+      .skill-progress-area{
+        margin-bottom: 40px;
+      }
+      .over-skill{
+        padding: 30px 0;
+      }
+      .review-title{
+        width: 100%;
+      }
+      .ourteam-title{
+        width: 100%;
+      }
+}
+
+/*---------------- Media Query End -----------------*/

@@ -1,0 +1,130 @@
+.gray-bg {
+    background-color: #f5f6f6;
+    padding-bottom: 40px;
+    padding-top: 25px;
+}
+
+.exp-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.exp-icon {
+    background-color: #003e6d;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto 20px;
+    line-height: 80px;
+    border-radius: 7px;
+    font-size: 27px;
+    color: #fff;
+}
+
+.explore-content h4 {
+    font-size: 19px;
+    color: #000;
+    margin-bottom: 13px;
+}
+
+.explore-content p {
+    margin-bottom: 0;
+}
+.service-title{
+    margin-bottom: 25px;
+}
+.service-section {
+    background-image: url('C:/Transport Triangle/front/src/img/map.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 55px 0;
+}
+.service-innerbox {
+    padding: 15px;
+    border-radius: 7px;
+    background-color: #fff;
+    transition: 500ms all ease;
+    box-shadow: 0px 0px 45px 0px rgb(87 87 87 / 20%);
+    height: 100%;
+    overflow:hidden;
+}
+.service-img img {
+    height: 193px;
+    width: 100%;
+    cursor: pointer;
+    /* transition: 500ms all ease; */
+}
+
+.serv-img{
+    transition: 0.2s;
+}
+.serv-img:hover{
+    scale: 1.2;
+    transition-delay: 0.2s;
+    overflow: hidden;
+  
+}
+.cor-service-icon{
+    font-size: 26px;
+    background-color: white;
+    line-height: 10px;
+    width: 30%;
+    margin-top: -10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color:rgb(138, 1, 218);
+    text-align: center;
+    transition: 0.4s;
+}
+.cor-service-icon:hover{
+    transform: rotate(360deg);
+    transition-delay: 0.3S;
+}
+
+.service-content h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+.cor-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #8a8a8a;
+    position: relative;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.cor-title h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000d51;
+    padding: 18px 0px 18px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.service-btn a {
+    width: 160px;
+    height: 42px;
+    font-size: 15px;
+    font-weight: 600;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #003e6d;
+    background-color: #fff;
+    border: 2px solid #003e6d;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 39px;
+    transition: 500ms all ease;
+}
+.Link:hover{
+    background-color: #242525;
+    color: white;
+    border: 2px solid #8b06f8;;
+}

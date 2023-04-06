@@ -1,0 +1,20 @@
+.adminViewVehicale{
+    margin-top: 4%;
+    padding: 0px 0;
+    height: 100vh;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+}
+.vehicale-table{
+    margin-left: 1%;
+    margin-right: 1%;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1199px) {
+    .adminViewVehicale{
+        margin-top: 4%;
+        padding: 45px 0;
+        height: 100vh;
+        background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+    }
+}

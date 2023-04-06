@@ -1,0 +1,135 @@
+::-webkit-input-placeholder { 
+  color: rgb(0, 0, 0);
+}
+
+:-ms-input-placeholder { 
+  color: rgb(0, 0, 0);
+}
+
+::placeholder {
+  color: rgb(0, 0, 0);
+}
+.myvehicale{
+  /* background-image: linear-gradient(  rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+  background-color: hsla(0, 43%, 99%, 0.979);
+  color : hsla(0, 3%, 12%, 0.979);
+}
+.inputsignup{
+    margin-left: 3%;
+    border: none;
+    width: 90%;
+    outline: none;
+}
+.zmdiTruc{
+    margin-bottom: -30%;
+}
+.clientVehicale{
+    width: 75%;
+    background: transparent;
+    color: #000000;
+    margin-left: 8%;
+}
+
+.vehicaleData{
+    margin-left: 3%;
+    padding: 1%;
+    border: none;
+    width: 90%;
+    background: transparent;
+    outline: none;
+}
+.viewVehicale{
+    text-decoration: none;
+    font-weight: 500;
+    width:15.8%;
+    color: #000000;
+  }
+.viewVehicale:hover{
+  color: rgb(71, 114, 119);
+  text-decoration: underline;
+}
+.vehicale-main{
+    width: 50%;
+    margin-top: 2%;
+    padding-top: 20%;
+    /* background-image: linear-gradient(rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+    box-shadow: 25px;
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+  }
+  .vehical-color{
+    /* background-color:rgb(132, 0, 255); */
+    /* background-color:rgb(193, 156, 228); */
+    margin-top: -5%;
+    background: transparent;
+    backdrop-filter: blur(30px);
+  }
+  .myvehical-color{
+    /* background-image: linear-gradient(rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right:1%;
+    /* width: 1350px; */
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+  }
+  .vehicale-tr{
+    color: #000000;
+    font-weight: 500;
+  }
+  .vehicale-tr:hover{
+    background-color: #b3b0b0;
+  }
+  .addVehicale{
+    /* background-image:linear-gradient(  rgb(0, 86, 184),rgb(147, 179, 228),rgb(25, 49, 185)); */
+    font-weight: 500;
+    background-color:hsla(0, 3%, 12%, 0.979);
+    color:  hsla(0, 43%, 99%, 0.979);
+  }
+  .addVehicale:hover{
+    background-image: linear-gradient( rgb(184, 110, 0),rgb(184, 110, 0),rgb(184, 110, 0));
+    color:hsla(0, 0%, 0%, 0.979);
+    /* box-shadow: 0 4px 8px 0 rgba(255, 242, 242, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ; */
+  }
+  .book-btn{
+    background-color:hsla(0, 3%, 12%, 0.979);
+    color:  hsla(0, 43%, 99%, 0.979);
+  }
+  .book-btn:hover{
+    background-image:linear-gradient(  rgb(223, 64, 58),rgb(223, 64, 58),rgb(223, 64, 58));
+    color: #ffff;
+  }
+@media screen and (max-width: 1199px) {
+  .vehicale-main{
+    width: 95%;
+    height: 90vh;
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+    /* background-image: linear-gradient(rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+  }
+  .clientVehicale{
+      width: 100%;
+      background: transparent;
+      color: #000000;
+      margin-left: 0%;
+  }
+  .vehicaleData{
+      margin-left: 0%;
+      padding: 2%;
+      padding-top: 2%;
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 80%;
+  }
+  .viewVehicale{
+    text-decoration: none;
+    font-weight: 500;
+    width:35%;
+    color: #000000;
+  }
+.viewVehicale:hover{
+  color: rgb(71, 114, 119);
+  text-decoration: underline;
+}
+}

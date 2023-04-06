@@ -1,0 +1,32 @@
+.fb-main{
+    margin-top: 2%;
+}
+.feedback-body{
+    margin-top: 4%;
+    padding: 45px 0;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+    
+}
+.feedback-table{
+    margin-left: 1%;
+    margin-right: 1%;
+    font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+    .fb-main{
+        margin-top: 4%;
+       width: 95%;
+    }
+    .feedback-body{
+      margin-top: 4%;
+      padding: 45px 0;
+      background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+        
+    }
+    .feedback-table{
+        margin-top: 15%;
+        margin-left: 1%;
+        margin-right: 1%;
+        font-weight: 500;
+    }
+}

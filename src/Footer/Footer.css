@@ -1,0 +1,137 @@
+.footer-bg {
+    background-color: #a799c5;
+    color: #000000;
+    font-weight: 500;
+    padding: 40px 0 0px;
+}
+
+.footer-title {
+    color: #21059c;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.f-list li {
+    margin-bottom: 5px;
+}
+
+.f-list li a {
+    color: #0c0d0f;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.f-list li:hover a {
+    color: #da1212;
+    text-decoration: underline;
+}
+
+.footer-logo-content {
+    padding-right: 40px;
+}
+
+.address-list i {
+    width: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 8px;
+}
+
+.address-list a {
+    flex: 1;
+    color: #000000;
+}
+
+.address-list li {
+    margin-bottom: 15px;
+}
+
+.social-media li a {
+    font-size: 25px;
+    /* color: #999b9f; */
+}
+
+.social-media li {
+    margin-right: 15px;
+}
+
+.social-media li:hover a {
+    color: #0025c9;
+}
+
+.f-logo img {
+    height: 90px;
+    width: 95px;
+    margin-bottom: 15px;
+}
+
+.sub-footer {
+    border-top: 1px solid #000000;
+    padding-top: 20px;
+    margin-top: 15px;
+}
+
+.footer-top {
+    background-color: #003d6c;
+    position: relative;
+    margin-bottom: -58px;
+    width: 85%;
+    padding: 35px 35px 35px 55px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+.btn.btn-subscribe {
+    background-color: #fff;
+    color: #003d6c;
+    height: 50px;
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 173px;
+    font-size: 14px;
+}
+
+.f-list li::before {
+    content: '\f105';
+    font-family: "Font Awesome 6 Free";
+    color: #999b9f;
+    transition: 0.3s;
+    font-weight: 600;
+    padding-right: 10px;
+}
+.f-list li:hover::before{
+    color: rgb(3, 2, 2);
+}
+.flink{
+    color: #da1515;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-bg {
+        text-align: center;
+        height: 50%;
+    }
+
+    .footer-title {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .slider-img {
+        height: 275px;
+    }
+
+    .footer-logo-content {
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+  
+    .footer-top {
+        padding: 35px 35px 35px 35px;
+    }
+}

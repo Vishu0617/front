@@ -1,0 +1,183 @@
+.dashboard-block {
+    margin-top: 0%;
+    padding-top: 5%;
+    /* background-image: linear-gradient(  rgb(150, 150, 150),rgb(192, 182, 192),rgb(150, 150, 150)); */
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+    color:hsla(0, 0%, 0%, 0.979);
+}
+.dashboard-block1{
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 0%;
+  margin-top: 1%;
+}
+.table-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.table-box {
+    border-radius: 4px;
+    padding: 30px;
+    margin-top: 15px;
+    background-color: hsla(0, 43%, 99%, 0.979);
+    color : hsla(0, 3%, 12%, 0.979); 
+  }
+  .table-box thead{
+    background-color: #003d6c;
+    color: #fff;
+   
+  }
+  .table-box .table th{
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .table-box .table th, .table-box .table td{
+    text-align: center;
+    vertical-align: middle;
+  }
+  .dlink{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+  }
+  .dlink:hover{
+    text-decoration: underline;
+  }
+  .Trips{
+    margin: 2%;
+    width: 20%;
+    height: 22%;
+  }
+  .plink{
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .plink:hover{
+    color: rgb(70, 84, 146);
+    text-decoration: underline;
+  }
+  .profile{
+    border-radius: 100%;
+    height: 95px;
+    margin-top: -125px;
+    margin-left: -2%;
+    width: 105px;
+    height: 105px;
+  }
+    /*--------------- Image upload css Start -------------*/
+
+.avatar{
+  margin-top: -10%;
+}
+.edit-data-admin{
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 40%;
+  margin-left: -45%;
+  margin-bottom: 5%;
+  color: rgb(0, 0, 0);
+}
+.avatar-upload {
+  width: 110px;
+  height: 110px;
+  position: absolute;
+  top: -110px;
+}
+
+.avatar-upload .avatar-edit {
+  position: absolute;
+  right: 19px;
+  z-index: 1;
+  top: 13px;
+}
+
+.avatar-upload .avatar-preview {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+  border: 5px solid rgb(150, 139, 139);
+  /* -webkit-box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 0 45px rgba(0, 0, 0, .2); */
+  box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+}
+
+.camera-i {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  /* background-image: "C:/Transport Triangle/front/src/img/Camero Icon.jpg"; */
+  border-radius: 50%;
+  color: #013f6e;
+  text-align: center;
+  line-height: 41px;
+  font-size: 21px;
+  position: absolute;
+  bottom: -115px;
+  left: 30px;
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+}
+/*--------------- Image upload css End -------------*/
+.bio-info{
+  margin-left:10%;
+  margin-top: -5%;
+  margin-bottom: -20%;
+  margin-right: -5%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-info{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 5%;
+  color: #000000;
+  font-weight: 500;
+  transition:0.5s;
+  background-color: rgba(0, 238, 255, 0.664);
+}
+.card-info:hover{
+ scale: 1.1;
+ cursor: pointer;
+ transition:0.5s;
+}
+.datatable{
+  color: #000000;
+  font-weight: 500;
+}
+@media screen and (max-width: 1199px) {
+  .dashboard-block {
+    margin-top: -10%;
+    padding-top: 5%;
+    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
+    color:hsla(0, 0%, 0%, 0.979);
+  }
+  .dashboard-block1{
+    padding-top: 4%;
+    margin-top: 25%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .card-info{
+  margin-top: 5%;
+  font-weight: 500;
+  color: #000000;
+  font-weight: 500;
+  background-color: rgba(0, 238, 255, 0.664);
+  }
+  .card-info:hover{
+    cursor: pointer;
+    transition:0.3s;
+    scale: 1.1;
+   }
+   .bio-info{
+    margin-top: 10%;
+    margin-left:0%;
+    margin-bottom: -15%;
+    margin-right: 0%;
+  }
+}
