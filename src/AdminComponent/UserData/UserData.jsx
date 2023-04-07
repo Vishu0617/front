@@ -83,8 +83,8 @@ function UserData() {
     <>
     <div className="user-detail h-100 pt-lg-5 pb-lg-5">
       <div className="table-box user-table shadow border-dark card">
-          <div align="center ">
-            <input className="userSearcrh rounded-1 ps-1" placeholder="Search..." onChange={(e) => setQuery(e.target.value.toLowerCase())} />
+          <div align="center">
+            <input className="userSearcrh border fw-5 rounded-1 ps-1" placeholder="Search..." onChange={(e) => setQuery(e.target.value.toLowerCase())} />
           </div>
         <h4 className="text-dark mb-1">User Detail</h4>
         <div className="table-responsive ">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaSuitcase, FaStar } from "react-icons/fa";
 import { RiTruckFill } from "react-icons/ri";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import "./AdminDashbord.css";
 import axios from "axios";
 import Footer from "../../Footer/Footer";
@@ -41,7 +41,7 @@ function AdminDashbord() {
         <div className="dashboard-block1">
           <div className="col-12">
             <div className="row">
-              <div className="col-xl-3 col-md-6 col-12 ">
+              <Link  to={`/admin/AdminComponent/Goods/GoodsDetail/${id}`} className="col-xl-3 col-md-6 col-12 text-decoration-none ">
                 <div className="card-info shadow bg-success card border-dark rounded p-2">
                   <div className="d-flex justify-content-between">
                     <FaSuitcase className="Trips text-white" />
@@ -54,8 +54,8 @@ function AdminDashbord() {
                   </div>
                   <p className="mb-0">45% higher growth</p>
                 </div>
-              </div>
-              <div className="col-xl-3 col-md-6 col-12 ">
+              </Link>
+              <Link  to={`/admin/AdminComponent/Vehicale/AdminViewDetail/${id}`} className="col-xl-3 col-md-6 col-12 text-decoration-none">
                 <div className="card-info shadow bg-warning card border-dark rounded p-2 ">
                   <div className="d-flex justify-content-between">
                     <RiTruckFill className="Trips text-white"/>
@@ -68,8 +68,8 @@ function AdminDashbord() {
                   </div>
                   <p className="mb-0">65% lower growth</p>
                 </div>
-              </div>
-              <div className="col-xl-3 col-md-6 col-12 ">
+              </Link>
+              <Link  to={`/admin/AdminComponent/UserData/UserData/${id}`} className="col-xl-3 col-md-6 col-12 text-decoration-none">
                 <div className="card-info shadow bg-primary card border-dark rounded p-2 ">
                   <div className="d-flex justify-content-between">
                     <i class="zmdi zmdi-accounts zmdi-hc-3x text-white"></i>
@@ -82,8 +82,8 @@ function AdminDashbord() {
                   </div>
                   <p className="mb-0">25% lower growth</p>
                 </div>
-              </div>
-              <div className="col-xl-3 col-md-6 col-12 ">
+              </Link>
+              <Link  to={`/admin/AdminComponent/Feedback/UserFeedback/${id}`} className="col-xl-3 col-md-6 col-12 text-decoration-none">
                 <div className="card-info shadow bg-danger card border-dark rounded p-2 ">
                   <div className="d-flex justify-content-between">
                     <FaStar className="Trips text-white" />
@@ -96,7 +96,7 @@ function AdminDashbord() {
                   </div>
                   <p className="mb-0">15% higher growth</p>
                 </div>
-              </div>
+              </Link>
               {/* treap detail */}
               <div className="col-12 mt-2 mb-3">
                 <div className="table-box table-hover border-dark table-bordered shadow card">

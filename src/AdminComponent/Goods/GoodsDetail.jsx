@@ -3,12 +3,39 @@ import React, { useEffect, useState } from "react";
 import './GoodsDetail.css'
 import { Link, useNavigate, useParams } from "react-router-dom";
 import Footer from "../../Footer/Footer";
+import {  toast } from 'react-toastify';
+import Button from '@mui/material/Button';
+import Dialog from '@mui/material/Dialog';
+import DialogActions from '@mui/material/DialogActions';
+import DialogContent from '@mui/material/DialogContent';
+
 
 function GoodsDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [fetchGoods, setFetchGoods] = useState([]);
   const [goodsLength, setGoodsLength] = useState();
+  const [open, setOpen] = useState(false);
+  const [deleteOpen, setDeleteOpen] = useState(false)
+
+  // delete
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+  //delete end
+
+  // update
+  const handleClickOpen1 = () => {
+    setDeleteOpen(true);
+  };
+  const handleClose1 = () => {
+    setDeleteOpen(false);
+  };
+  //update end
 
   useEffect(() => {
     axios.get("http://localhost:3001/fetchgoodsAll").then((res) => {
@@ -27,9 +54,29 @@ function GoodsDetail() {
     axios.delete(`http://localhost:3001/goodsDelete/${gid}`)
          .then((res)=>{
           console.log(res.data.message)
-          alert(res.data.message)
+          // alert(res.data.message)
+          toast.success(res.data.message, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
          }).catch((err)=>{
            console.log(err,"server error");
+           toast.info(err, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
          })
   }
 
@@ -46,7 +93,7 @@ function GoodsDetail() {
             <Link className="payment-histy-link" to={`/admin/AdminComponent/Goods/PaymentHistory/${id}`}>Payment Histriy</Link>
           <div align="center">
             <input
-              className="userSearcrh rounded-1"
+              className="userSearcrh border rounded-1"
               placeholder="Search..."
               onChange={(e) => setQuery(e.target.value.toLowerCase())}
             />
@@ -96,18 +143,26 @@ function GoodsDetail() {
                         <td>{e.descr}</td>
                         <td>
                         <div className="d-flex">
-                          <button
-                            className="btn btn-outline-success action me-2 rounded"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal"
-                            onClick={() => {
-                          if (window.confirm("Are you sure Update this data"))userUpdate(e._id);}}><i class="zmdi zmdi-edit zmdi-hc-1x"></i>
-                          </button>
-                          
-                          <button
-                            className="btn btn-outline-danger action me-2 rounded"
-                            onClick={() => {
-                          if (window.confirm("Are you sure delete this data"))goodsDelete(e._id);}}><i class="zmdi zmdi-delete zmdi-hc-1x"></i>
-                          </button>
+                          <button className="btn btn-outline-success action me-2 rounded-circle" onClick={handleClickOpen}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button>
+                          <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
+                              <DialogContent className="bg-light" id="alert-dialog-description">
+                                 <h4>Are you sure Update this data ?</h4>
+                              </DialogContent>
+                              <DialogActions className="bg-light">
+                                <Button className="btn cancelbutton shadow text-white bg-dark" onClick={handleClose}>Cancel</Button>
+                                <Button className="btn updatebutton shadow text-white bg-dark"  onClick={()=>userUpdate(e._id)} > Update </Button>
+                              </DialogActions>
+                          </Dialog>
+                          <button className="btn btn-outline-danger action me-2 rounded-circle" onClick={handleClickOpen1}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></button>
+                          <Dialog className="dialog" open={deleteOpen} onClose={handleClose1} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
+                              <DialogContent className="bg-light" id="alert-dialog-description">
+                                 <h4>Are you sure Delete this data ?</h4>
+                              </DialogContent>
+                              <DialogActions className="bg-light">
+                                <Button className="btn cancelbutton shadow text-white bg-dark" onClick={handleClose1}>Cancel</Button>
+                                <Button className="btn deletbutton shadow text-white bg-dark"  onClick={()=>goodsDelete(e._id)} > Delete </Button>
+                              </DialogActions>
+                          </Dialog>
                           </div>
                         </td>
                       </tr>

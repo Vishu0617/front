@@ -45,7 +45,7 @@ function Footer() {
                     </li>
                     <li className="d-md-flex">
                     <i className="zmdi zmdi-email"></i>
-                        <a href="mailto:itdevloper2021@gmail.com" alt="sending email">itdevloper2021@gmail.com</a>
+                        <a href="mailto:itdevloper2021@gmail.com" alt="email">itdevloper2021@gmail.com</a>
                     </li>
                     <li className="d-md-flex">
                     <i className="zmdi zmdi-phone"></i>

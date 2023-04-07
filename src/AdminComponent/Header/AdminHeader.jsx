@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import {  Link, NavLink,useNavigate,useParams } from 'react-router-dom'
+import {  NavLink,useNavigate,useParams } from 'react-router-dom'
 import './AdminHeader.css'
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -72,21 +72,21 @@ function AdminHeader() {
         <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/admin/AdminComponent/Dashbord/AdminDashbord/${id}`} ><i className="zmdi zmdi-home zmdi-hc-1x" ></i> Home </NavLink>
         </li>
-        <li className="nav-item mt-2">
+        {/* <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/UserData/UserData/${id}`}><i className="zmdi zmdi-accounts-alt zmdi-hc-1x"></i> Data</NavLink>
-        </li>
-        <li className="nav-item mt-2">
+        </li> */}
+        {/* <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/Goods/GoodsDetail/${id}`}><i className="zmdi zmdi-airplane zmdi-hc-1x"></i> Detail</NavLink>
-        </li>
-        <li className="nav-item mt-2">
+        </li> */}
+        {/* <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/Vehicale/AdminViewDetail/${id}`} ><i className="zmdi zmdi-truck zmdi-hc-1x"></i> View </NavLink> 
-        </li>
-        <li className="nav-item mt-2">
-        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/UserContectDetail/UserContectDetail/${id}`} ><i className="zmdi zmdi-phone-in-talk zmdi-hc-1x"></i> Detail </NavLink>
-        </li>
-        <li className="nav-item mt-2">
+        </li> */}
+        {/* <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/Feedback/UserFeedback/${id}`} ><i className="zmdi zmdi-comments zmdi-hc-1x"></i> Feedbacks</NavLink> 
-        </li>
+      </li> */}
+      <li className="nav-item mt-2">
+      <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/UserContectDetail/UserContectDetail/${id}`} ><i className="zmdi zmdi-phone-in-talk zmdi-hc-1x"></i> Detail </NavLink>
+      </li>
         <li className="nav-item mt-2">
         <NavLink className="text-dark" to={`#`} onClick={handleClickOpen} >Logout</NavLink> 
         </li>
@@ -105,8 +105,11 @@ function AdminHeader() {
       <div>
         <div className="ps-3 call-text">
         <div to="tel:0282 1234 1452" className="call-block align-items-center">
-                <p className="mb-0 ">Call :-<Link >{fetchData.phone}</Link></p>
-                <p className="mb-0">E-mail :-<Link >{fetchData.email}</Link></p>
+                <p className="mb-0 ">Call :-<a href="tel:`{fetchData.phone}`" alt="call">{fetchData.phone}</a></p>
+                {/* <a href="tel:`{fetchData.phone}`" alt="call">{fetchData.phone}</a> */}
+                <p className="mb-0">E-mail :-<a href="mailto:`{fetchData.email}`" alt="email">{fetchData.email}</a></p>
+                {/* <a href="mailto:`{fetchData.email}`" alt="sending email">{fetchData.email}</a> */}
+        
         </div>
       </div>
       </div>
