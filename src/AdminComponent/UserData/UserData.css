@@ -94,7 +94,33 @@
   background-color: hsla(0, 43%, 99%, 0.979);
   color : hsla(0, 3%, 12%, 0.979); 
 }
-
+.deletbutton{
+  background-color:  hsla(0, 3%, 12%, 0.979);
+  color:hsla(0, 43%, 99%, 0.979);
+  font-weight: 500;
+}
+.deletbutton:hover{
+  color:hsla(0, 0%, 100%, 0.979);
+  background-image:linear-gradient( rgb(223, 64, 58),rgb(223, 64, 58),rgb(223, 64, 58));
+}
+.cancelbutton{
+  background-color:  hsla(0, 3%, 12%, 0.979);
+  color:hsla(0, 43%, 99%, 0.979);
+  font-weight: 500;
+}
+.cancelbutton:hover{
+  color:hsla(0, 0%, 100%, 0.979);
+  background-image:linear-gradient( rgba(30, 120, 238, 0.788),rgb(30, 120, 238, 0.788),rgb(30, 120, 238, 0.788));
+}
+.updatebutton{
+  background-color:  hsla(0, 3%, 12%, 0.979);
+  color:hsla(0, 43%, 99%, 0.979);
+  font-weight: 500;
+}
+.updatebutton:hover{
+  color:hsla(0, 0%, 100%, 0.979);
+  background-image:linear-gradient( rgba(85, 243, 71, 0.788),rgb(85, 243, 71, 0.788),rgb(85, 243, 71, 0.788));
+}
 @media screen and (max-width: 1199px) {
   .signup-main{
     width: 90%;

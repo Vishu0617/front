@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Footer from '../../Footer/Footer'
 import './UserPersnalFeedback.css'
+import {  toast } from 'react-toastify';
+
 
 function UserPersnalFeedback() {
     // const {id}=useParams() //admin id
@@ -36,10 +38,30 @@ function UserPersnalFeedback() {
         axios.post(`http://localhost:3001/persnalfeedback/${uid}`,feedback).then((res)=>{
             console.log(res.data.message)
             setFeedback({feedback:""});
-            alert(res.data.message)
+            // alert(res.data.message)
+            toast.success(res.data.message, {
+              position: "top-center",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+              });
             // navigate(`/admin/AdminComponent/UserData/UserData/${id}`);
         }).catch((error)=>{
             console.log(error.response.data.error)
+            toast.error(error.response.data.error, {
+              position: "top-center",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+              });
         })
     }
 
@@ -72,12 +94,12 @@ function UserPersnalFeedback() {
       <div className='feed-main container-fluid '  >
       <form onSubmit={submitFb}  className="col-md-6 container feed-main rounded d-flex">
             <input
-              className="shadow me-2  border-danger rounded-1 feed-input"
+              className="shadow me-2 bg-white border-danger rounded-1 feed-input"
               type="text"
               placeholder="Enter youre Sugestion..."
               name="feedback"
               onChange={inputfb}
-              required
+              // required
             />
 
             <button className='btn btn-primary border-danger shadow' >Send</button>

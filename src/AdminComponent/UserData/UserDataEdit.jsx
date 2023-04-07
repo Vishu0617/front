@@ -3,6 +3,10 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import Footer from '../../Footer/Footer'
 import './UserData.css'
+import {  toast } from 'react-toastify';
+import Button from '@mui/material/Button';
+
+
 
 function UserDataEdit() {
     
@@ -26,8 +30,29 @@ function UserDataEdit() {
         e.preventDefault();
         axios.put(`http://localhost:3001/update/${id}`,fetchData).then((res)=>{
             console.log(res.data)
-            alert(res.data.message)
+            // alert(res.data.message)
+            toast.success(res.data.message, {
+              position: "top-center",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+              });
             navigate(`/admin/AdminComponent/UserData/UserData/${id}`)
+        }).catch((error)=>{
+          toast.error(error.response.data.error, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
         })
     }
 
@@ -82,9 +107,9 @@ function UserDataEdit() {
                 />
               </div>                  
               <center className="submit-divr ">
-                <button className="btn btn-outline-success" type="Submit">
+                <Button className="btn text-white bg-dark" type="Submit">
                   Submit
-                </button>
+                </Button>
               </center>
             </form>
         </div>
