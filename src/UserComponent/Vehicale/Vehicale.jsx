@@ -15,7 +15,6 @@ function Vehicale() {
 
   const { id } = useParams();
  
-
   const inputData = (e) => {
     setVehicale({ ...vehicale, [e.target.name]: e.target.value });
     console.log(vehicale)

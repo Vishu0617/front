@@ -159,13 +159,12 @@ function ClientHeader() {
         </li>
 
       </ul>
-      <div>
-        <div  className="d-flex call-block align-items-center">
-        <i className="zmdi zmdi-phone"></i>
-            <div className="ps-3 call-text-u text-dark">
-                <label>Call Us</label>
-                <p className="mb-0"><a href="tel:+9157167899" alt="call">9157167899</a></p>
-            </div>
+      <div className="ps-3 call-text">
+        <div className="call-block">
+            <div className=" align-items-center">
+            <i className="zmdi zmdi-email"></i> <a className="admin-detail-link" href="mailto:itdevloper2021@gmail.com" alt="email">itdevloper2021@gmail.com</a><br></br>
+            <i className="zmdi zmdi-phone"></i> <a className="admin-detail-link" href="tel:9157167899" alt="call">9157167899</a>
+          </div>
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@ function ClientDashbord() {
 
   return(
     <>
-    <div className="client-dashbord table-box  shadow" >
+    <div className="client-dashbord  shadow" >
       <div className="border-dark rounded client-main-div1">
         <div className="row ">
           <div className="col-xl-3 col-md-6 col-6 rounded-1 card  client-trips ">

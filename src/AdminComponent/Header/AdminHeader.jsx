@@ -72,18 +72,18 @@ function AdminHeader() {
         <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/admin/AdminComponent/Dashbord/AdminDashbord/${id}`} ><i className="zmdi zmdi-home zmdi-hc-1x" ></i> Home </NavLink>
         </li>
-        {/* <li className="nav-item mt-2">
+        <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/UserData/UserData/${id}`}><i className="zmdi zmdi-accounts-alt zmdi-hc-1x"></i> Data</NavLink>
-        </li> */}
-        {/* <li className="nav-item mt-2">
+        </li>
+        <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/Goods/GoodsDetail/${id}`}><i className="zmdi zmdi-airplane zmdi-hc-1x"></i> Detail</NavLink>
-        </li> */}
-        {/* <li className="nav-item mt-2">
+        </li>
+        <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/Vehicale/AdminViewDetail/${id}`} ><i className="zmdi zmdi-truck zmdi-hc-1x"></i> View </NavLink> 
-        </li> */}
-        {/* <li className="nav-item mt-2">
+        </li>
+        <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/Feedback/UserFeedback/${id}`} ><i className="zmdi zmdi-comments zmdi-hc-1x"></i> Feedbacks</NavLink> 
-      </li> */}
+      </li>
       <li className="nav-item mt-2">
       <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/UserContectDetail/UserContectDetail/${id}`} ><i className="zmdi zmdi-phone-in-talk zmdi-hc-1x"></i> Detail </NavLink>
       </li>
