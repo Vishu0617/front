@@ -56,7 +56,7 @@
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: #ffffff48;
+    background-color: #ffffff83;
    }
 
 .login-input{
@@ -112,7 +112,6 @@
     margin-top: 30%;
     width: 90%;
     background-color: #fff;
-    backdrop-filter: blur(0px);
 }
    .input-main{
     width:700px;
