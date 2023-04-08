@@ -89,7 +89,7 @@
 .signup-main{
     width: 50%;
     padding-top: 10%;
-    background-image: linear-gradient( rgb(170, 170, 170),rgb(151, 160, 173),rgb(170, 170, 170));
+    background-image: linear-gradient( rgba(170, 170, 170, 0.616),rgba(151, 160, 173, 0.699),rgba(170, 170, 170, 0.712));
     color:hsla(0, 0%, 0%, 0.979);
    }
 

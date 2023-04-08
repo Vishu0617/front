@@ -2,6 +2,10 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import {  toast } from 'react-toastify';
+import video from '../../img/icon/cloud1.mp4'
+import Button from '@mui/material/Button';
+
+
 
 function ForgetPassword() {
     
@@ -49,11 +53,12 @@ function ForgetPassword() {
 
   return (
     <>
-       <div className="admin-login-body">
+    <div className="admin-login-body">
+      <video autoPlay muted loop src={video} className="login-video"></video>
         <div className="shadow rounded signup-main mb-4 p-5 mt-4 container">
-        <h1 align="center">Enter Your E-mail</h1><hr/>
+        <h5>Enter Your E-mail</h5><hr/>
             <form className="row g-3 mt-2 div-mid">
-              <div className="col-md-6 form-control admin-input shadow rounded  d-flex">
+              <div className="col-md-6 form-control admin-input border-dark  rounded  d-flex">
                 <label className="form-label mt-2"><i className="zmdi zmdi-email"></i></label>
                 <input
                   className="inputsignup"
@@ -66,13 +71,13 @@ function ForgetPassword() {
                 />
               </div>
               <center>
-                <button
-                  className="btn btn-outline-success"
+                <Button
+                  className="btn bg-dark text-white"
                   type="Submit"
                   onClick={submitHandle}
                 >
                   Submit
-                </button>
+                </Button>
                 {/* <Link className="submit m-1 btn btn-outline-danger" to="/AdminComponent/Login/AdminLogin">
                   Back
                 </Link> */}

@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./AdminLogin.css";
+import video from '../../img/icon/cloud1.mp4'
 import {  toast } from 'react-toastify';
+import Button from '@mui/material/Button';
+
 
 
 function AdminLogin({ setAdminData }) {
@@ -62,17 +65,18 @@ function AdminLogin({ setAdminData }) {
   return (
     <>
     <div className="admin-login-body">
-      <div className="rounded login-main bg-white shadow-lg container">
-       <h5>Admin Login</h5><hr/>
+    <video autoPlay muted loop src={video} className="login-video"></video>
+      <div className="rounded login-main shadow-lg container">
+       <h5 className="">Admin Login</h5><hr/>
         <form className="row g-3 " onSubmit={loginSubmit}>
-          <div className="col-md-6 form-control admin-input  rounded  d-flex">
+          <div className="col-md-6 form-control admin-input border-dark  rounded  d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-email"></i>
             </label>
             <input
               className="inputsignup"
               type="email"
-              placeholder="Enter your register email..."
+              placeholder="Enter E-mail"
               name="email"
               maxLength="255"
               onChange={loginChack}
@@ -80,14 +84,14 @@ function AdminLogin({ setAdminData }) {
               // required
             />
           </div>
-          <div className="col-md-6 form-control ms-0 admin-input rounded  d-flex">
+          <div className="col-md-6 form-control ms-0 admin-input  border-dark rounded  d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-lock"></i>
             </label>
             <input
               className="inputsignup"
               type={showPwd}
-              placeholder="Enter your register password ...."
+              placeholder="Enter Password"
               name="pwd"
               maxLength="10"
               onChange={loginChack}
@@ -103,7 +107,7 @@ function AdminLogin({ setAdminData }) {
           Forgot Password
         </Link>
           <div>
-            <button className="submit btn btn-dark" type="Submit"> Submit</button>
+            <Button className="submit btn bg-dark text-white" type="Submit"> Submit</Button>
           </div>
           {/* <div className="mt-2">
           new?<Link className="link" align="right" to="/AdminComponent/SignUp/SignUp">Registration</Link></div> */}
