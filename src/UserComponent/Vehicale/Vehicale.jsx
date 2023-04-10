@@ -55,13 +55,13 @@ function Vehicale() {
   return (
     <>
       <div className="client-dashbord">
-        <div className="shadow rounded vehicale-main card mb-4 p-5 container">
+        <div className=" rounded vehicale-main card mb-4 p-5 container">
           <h5>ADD YOUR VEHICALE</h5>
          <Link className="viewVehicale" to={`/client/UserComponent/Vehicale/MyVehicale/${id}`}>My Vehicale</Link>
           <hr />
           <form className="row g-3 div-mid" onSubmit={submitData}>
             {/* {id} */}
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="text"
@@ -71,7 +71,7 @@ function Vehicale() {
                 
               />
             </div>
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="text"
@@ -82,7 +82,7 @@ function Vehicale() {
                 
               />
             </div>
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="text"
@@ -92,7 +92,7 @@ function Vehicale() {
                 
               />
             </div>
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="text"
@@ -102,7 +102,7 @@ function Vehicale() {
                 
               />
             </div>
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="email"
@@ -112,7 +112,7 @@ function Vehicale() {
                 
               />
             </div>
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="text"
@@ -121,7 +121,7 @@ function Vehicale() {
                 onChange={inputData}
             />
             </div>
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="text"
@@ -130,7 +130,7 @@ function Vehicale() {
                 onChange={inputData}
               />
             </div>
-            <div className="col-md-6 form-control clientVehicale shadow border-dark rounded d-flex">
+            <div className="col-md-6 form-control clientVehicale  border-dark rounded d-flex">
               <input
                 className=" vehicaleData "
                 type="text"

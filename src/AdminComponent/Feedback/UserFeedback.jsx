@@ -62,7 +62,7 @@ function UserFeedback() {
 
   return (
     <>
-    <div className='feedback-body h-100 pt-lg-5 pb-lg-5'>
+    <div className='feedback-body pt-lg-5 pb-lg-5'>
       <div className="table-box feedback-table mb-2 shadow border-dark card ">
         <h4 className="text-dark mb-4">User Feedback Detail</h4>
         {feedLenght === 0 ? (

@@ -1,6 +1,7 @@
 .dashboard-block {
     margin-top: 0%;
     padding-top: 5%;
+    height: 100vh;
     /* background-image: linear-gradient(  rgb(150, 150, 150),rgb(192, 182, 192),rgb(150, 150, 150)); */
     background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
     color:hsla(0, 0%, 0%, 0.979);
@@ -153,6 +154,7 @@
   .dashboard-block {
     margin-top: -10%;
     padding-top: 5%;
+    height: 100vh;
     background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
     color:hsla(0, 0%, 0%, 0.979);
   }

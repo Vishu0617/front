@@ -70,7 +70,7 @@ function AdminViewDetail() {
 
   return (
     <>
-    <div className='adminViewVehicale h-100 pt-lg-5 pb-lg-5'>
+    <div className='adminViewVehicale pt-lg-5 pb-lg-5'>
      <div className="table-box vehicale-table mb-2 shadow border-dark card ">
      <div align="center">
         <input className="userSearcrh border rounded-1" placeholder="Search..." onChange={(e) => setQuery(e.target.value.toLowerCase())} />

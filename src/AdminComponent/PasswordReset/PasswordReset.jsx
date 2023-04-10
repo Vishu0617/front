@@ -1,6 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import {  toast } from 'react-toastify';
+import video from '../../img/icon/cloud1.mp4'
+import Button from '@mui/material/Button';
+
+
+
 
 function PasswordReset() {
   const [password, setPassword] = useState({});
@@ -33,21 +39,41 @@ function PasswordReset() {
     axios
     .put(`http://localhost:3001/updatePwd/${id}`,password)
     .then((res) => {
-     console.log(res.data.data);
-     alert("password update");
+     console.log(res.data.mesaage);
+     toast.success(res.data.message, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
     }).catch((err)=>{
-       
-       console.log(err)
+       console.log(err.response.data.error)
+       toast.error(err.response.data.error, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
     })
   };
 
   return (
     <>
+    <div className="admin-login-body">
+    <video autoPlay muted loop src={video} className="login-video"></video>
       <div className="shadow rounded signup-main mb-4 p-5 mt-4 container">
-        <h1 align="center">New Password</h1>
+        <h4 align="">Generate New Password</h4>
         <hr />
         <form className="row g-3 mt-2 div-mid">
-          <div className="col-md-6 form-control input-main shadow rounded  d-flex">
+          <div className="col-md-6 form-control admin-input shadow rounded  d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-lock"></i>
             </label>
@@ -62,16 +88,17 @@ function PasswordReset() {
             />
           </div>
           <center>
-            <button
-              className="submit ms-1 btn btn-outline-success"
+            <Button
+              className="ms-1 btn bg-dark text-white"
               type="Submit"
               onClick={submitNewPwd}
             >
               Submit
-            </button>
+            </Button>
           </center>
         </form>
       </div>
+    </div>
     </>
   );
 }

@@ -1,6 +1,7 @@
 .user-detail {
     margin-top: 4.5%;
-    padding: 45px 0;
+    height: 100vh;
+    padding: 45px 0 ;
     background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
 
 }
@@ -79,6 +80,7 @@
   .editbody{
    margin-top: 4%;
    padding: 45px 0;
+   height: 100vh;
    background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
   }
 .inputsignup{
@@ -128,6 +130,7 @@
    .user-detail {
     margin-top: 14%;
     padding: 45px 0;
+    height: 100vh;
     background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
   }
   .editbody{

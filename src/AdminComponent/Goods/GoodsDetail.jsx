@@ -88,7 +88,7 @@ function GoodsDetail() {
 
   return (
     <>
-    <div className="goods-body h-100 pt-lg-5 pb-lg-5">
+    <div className="goods-body pt-lg-5 pb-lg-5">
         <div className="goods-table table-box mb-2 border-dark shadow card">
             <Link className="payment-histy-link" to={`/admin/AdminComponent/Goods/PaymentHistory/${id}`}>Payment Histriy</Link>
           <div align="center">

@@ -4,8 +4,8 @@
 .feedback-body{
     margin-top: 4%;
     padding: 45px 0;
+    height: 100vh;
     background-image: linear-gradient( rgba(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829),rgb(160, 167, 170, 0.829));
-    
 }
 .feedback-table{
     margin-left: 1%;

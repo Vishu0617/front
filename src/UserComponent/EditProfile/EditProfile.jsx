@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import './ClientFileEdit'
 import './ClientFileEdit.css'
 import { useNavigate, useParams } from 'react-router-dom';
+import Button from '@mui/material/Button'
 import {  toast } from 'react-toastify';
 
 
@@ -106,9 +107,9 @@ function EditProfile() {
           </div> */}
                    
           <center className="">
-            <button className="btn btn-success" type="Submit">
+            <Button className="btn bg-dark text-white" type="Submit">
               Update Data
-            </button>
+            </Button>
           </center>
         </form>
       </div>

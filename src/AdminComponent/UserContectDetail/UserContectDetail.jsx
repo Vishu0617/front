@@ -69,7 +69,7 @@ function UserContectDetail() {
 
   return (
     <>
-      <div className="contect-detail  h-100 pt-lg-5 pb-lg-5">
+      <div className="contect-detail pt-lg-5 pb-lg-5">
         <div className="table-box contect-table mb-2 border-dark shadow card ">
           <h4 className="text-dark mb-4">Clent Message Detail</h4>
           <div className="table-responsive">

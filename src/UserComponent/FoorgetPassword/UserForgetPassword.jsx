@@ -2,6 +2,7 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import './UserForget.css'
 import {  toast } from 'react-toastify';
+import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -53,7 +54,7 @@ function UserForgetPassword() {
      <div className=" rounded forget-body shadow container">
      <h5 align="center">Enter E-mail</h5><hr/>
         <form className="row g-3 mt-2" onSubmit={handelEmail}>
-        <center>   <div className="col-md-6 form-control forget-main shadow rounded  d-flex">
+        <center>   <div className="col-md-6 form-control forget-main rounded  d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-email text-dark zmdi-hc-2x"></i>
             </label>
@@ -66,10 +67,8 @@ function UserForgetPassword() {
               onChange={inputData}
               // required
             />
-          </div>
-          
-            <button className="ms-1 forg-btn btn " type="Submit">Submit</button>
-
+          </div>  
+            <Button className="mt-5 bg-dark text-white forg-btn btn " type="Submit">Submit</Button>
           </center>
         </form>
      </div>

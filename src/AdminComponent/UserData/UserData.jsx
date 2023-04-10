@@ -75,14 +75,15 @@ function UserData() {
  
   const [query, setQuery] = useState("");
   const keys = ["name"];
-  const Users = fetchUser.filter((item) =>
+  const Users = fetchUser.filter(
+    (item) =>
     keys.some((key) => item[key].toLowerCase().includes(query))
   );
 
   return (
     <>
-    <div className="user-detail h-100 pt-lg-5 pb-lg-5">
-      <div className="table-box user-table shadow border-dark card">
+    <div className="user-detail pt-lg-5 pb-lg-5">
+      <div className="table-box user-table shadow border-dark1 card">
           <div align="center">
             <input className="userSearcrh border fw-5 rounded-1 ps-1" placeholder="Search..." onChange={(e) => setQuery(e.target.value.toLowerCase())} />
           </div>
@@ -124,7 +125,7 @@ function UserData() {
                     <td>{e.phone}</td>
                     <td >
                       <span className=" container mb-2 d-flex fw-bold" >
-                        <button className="btn btn-outline-danger shadow rounded-circle"  title="Delete This User" onClick={handleClickOpen}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></button>
+                        <button className="btn btn-outline-danger  rounded-circle"  title="Delete This User" onClick={handleClickOpen}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></button>
                         {/* <Button className="bg-dark text-white shadow rounded-circle" onClick={handleClickOpen}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></Button> */}
                         <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
@@ -137,8 +138,7 @@ function UserData() {
                         </Dialog>
                         {/* <Link className="elink shadow rounded-circle" to={`/admin/AdminComponent/UserData/UserDataEdit/${e._id}`}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></Link> */}
                         {/* <button className="btn btn-outline-success ms-2 shadow rounded-circle " title="Update This User" onClick={()=>{if(window.confirm("Are you sure Update this data"))userUpdate(e._id)}}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button> */}
-                        <button className="btn btn-outline-success ms-2 shadow rounded-circle " title="Update This User" onClick={handleClickOpen1}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button>
-                       
+                        <button className="btn btn-outline-success ms-2  rounded-circle " title="Update This User" onClick={handleClickOpen1}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button>
                         <Dialog className="dialog" open={updateOpen} onClose={handleClose1} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
                                  <h4>Are you sure Update This User ?</h4>
@@ -148,7 +148,7 @@ function UserData() {
                                 <Button className="btn updatebutton shadow text-white bg-dark" onClick={()=>userUpdate(e._id)} >Update</Button>
                               </DialogActions>
                         </Dialog>
-                        <Link className="btn btn-outline-secondary ms-2 shadow rounded-circle " title="Give Youre Feedback" to={`/admin/AdminComponent/UserData/UserPersnalFeedback/${id}/${e._id}`} ><i class="zmdi zmdi-comment-text zmdi-hc-1x"></i></Link>
+                        <Link className="btn btn-outline-secondary ms-2 rounded-circle " title="Give Youre Feedback" to={`/admin/AdminComponent/UserData/UserPersnalFeedback/${id}/${e._id}`} ><i class="zmdi zmdi-comment-text zmdi-hc-1x"></i></Link>
                       </span>
                     </td>
                   </tr>

@@ -39,10 +39,10 @@ function ClientProfile() {
           
         </div><hr/>
         <div align="center" className='d-flex social'>
-            <Link className='s-link' href="https://www.facebook.com/profile.php?id=100044580701985"><center><i class="zmdi zmdi-facebook"></i></center></Link>
-            <Link className='s-link' href="https://www.facebook.com/profile.php?id=100044580701985"><center><i class="zmdi zmdi-twitter"></i></center></Link>
-            <Link className='s-link' href="https://www.facebook.com/profile.php?id=100044580701985"><center><i class="zmdi zmdi-whatsapp"></i></center></Link>
-            <Link className='s-link' href="https://www.facebook.com/profile.php?id=100044580701985"><center><i class="zmdi zmdi-linkedin"></i></center></Link>
+            <a className='s-link' href="https://www.facebook.com/profile.php?id=100044580701985" target='_blank' rel="noreferrer"><center><i class="zmdi zmdi-facebook"></i></center></a>
+            <a className='s-link' href="https://twitter.com/vishalP1188150" target='_blank' rel="noreferrer"><center><i class="zmdi zmdi-twitter"></i></center></a>
+            <a className='s-link' href="https://www.youtube.com/@vrpatel405" target='_blank' rel="noreferrer"><center><i class="zmdi zmdi-youtube"></i></center></a>
+            <a className='s-link' href="https://www.instagram.com/ptl_vishal_/" target='_blank' rel="noreferrer"><center><i class="zmdi zmdi-instagram"></i></center></a>
         </div>
           {/* <center><Link className='edit-data' to={`/client/UserComponent/EditProfile/EditProfile/${fetchData._id}`}>Edit Data</Link></center> */}
       </div>
