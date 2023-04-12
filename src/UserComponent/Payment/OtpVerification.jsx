@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './ClientPayment.css'
+import Button from '@mui/material/Button';
+
 
 function OtpVerification() {
   
@@ -46,12 +48,12 @@ function OtpVerification() {
               />
             </div>
             <center>
-              <button
-                className="submit ms-1 btn btn-outline-success"
+              <Button
+                className=" btn bg-dark text-white"
                 type="Submit"
               >
                 Submit
-              </button>
+              </Button>
             </center>
 
           </form>

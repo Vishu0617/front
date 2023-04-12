@@ -123,6 +123,9 @@
   color:hsla(0, 0%, 100%, 0.979);
   background-image:linear-gradient( rgba(85, 243, 71, 0.788),rgb(85, 243, 71, 0.788),rgb(85, 243, 71, 0.788));
 }
+.action-icon{
+  box-shadow: #003d6c;
+}
 @media screen and (max-width: 1199px) {
   .signup-main{
     width: 90%;

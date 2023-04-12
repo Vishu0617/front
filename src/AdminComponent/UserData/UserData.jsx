@@ -125,7 +125,7 @@ function UserData() {
                     <td>{e.phone}</td>
                     <td >
                       <span className=" container mb-2 d-flex fw-bold" >
-                        <button className="btn btn-outline-danger  rounded-circle"  title="Delete This User" onClick={handleClickOpen}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></button>
+                        <button className="btn btn-outline-danger action-icon rounded-circle"  title="Delete This User" onClick={handleClickOpen}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></button>
                         {/* <Button className="bg-dark text-white shadow rounded-circle" onClick={handleClickOpen}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></Button> */}
                         <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
@@ -138,7 +138,7 @@ function UserData() {
                         </Dialog>
                         {/* <Link className="elink shadow rounded-circle" to={`/admin/AdminComponent/UserData/UserDataEdit/${e._id}`}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></Link> */}
                         {/* <button className="btn btn-outline-success ms-2 shadow rounded-circle " title="Update This User" onClick={()=>{if(window.confirm("Are you sure Update this data"))userUpdate(e._id)}}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button> */}
-                        <button className="btn btn-outline-success ms-2  rounded-circle " title="Update This User" onClick={handleClickOpen1}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button>
+                        <button className="btn btn-outline-success ms-2 rounded-circle " title="Update This User" onClick={handleClickOpen1}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button>
                         <Dialog className="dialog" open={updateOpen} onClose={handleClose1} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
                                  <h4>Are you sure Update This User ?</h4>

@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './ClientPayment.css'
 import {  toast } from 'react-toastify';
+import Button from '@mui/material/Button';
+
 
 
 function ClientPayment({clientData}) {
@@ -83,7 +85,7 @@ function ClientPayment({clientData}) {
             <input type="text" className="form-control" name='amount' value={pri} placeholder="Enter Amount"  />
           </div>
           <div className="col-12 mb-2 mt-3">
-            <button type="submit" className="btn btn-outline-success">Payment</button>
+            <Button type="submit" className="btn bg-dark text-white">Payment</Button>
           </div>
       </form> 
       </div>
