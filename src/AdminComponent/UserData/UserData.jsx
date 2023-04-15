@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Footer from "../../Footer/Footer";
 import "./UserData.css";
 import {  toast } from 'react-toastify';
@@ -15,10 +15,10 @@ function UserData() {
   const [lenght, setLenght] = useState()
   const {id}=useParams() //admin id
   // console.log(id)
-  const navigate=useNavigate();
+  // const navigate=useNavigate();
 
   const [open, setOpen] = useState(false);
-  const [updateOpen, setUpdateOpen] = useState(false)
+  // const [updateOpen, setUpdateOpen] = useState(false)
 
   // delete
   const handleClickOpen = () => {
@@ -30,12 +30,12 @@ function UserData() {
   //delete end
 
   // update
-  const handleClickOpen1 = () => {
-    setUpdateOpen(true);
-  };
-  const handleClose1 = () => {
-    setUpdateOpen(false);
-  };
+  // const handleClickOpen1 = () => {
+  //   setUpdateOpen(true);
+  // };
+  // const handleClose1 = () => {
+  //   setUpdateOpen(false);
+  // };
   //update end
 
   useEffect(() => {
@@ -69,9 +69,9 @@ function UserData() {
     })
   }
 
-  const userUpdate=(id)=>{
-   navigate(`/admin/AdminComponent/UserData/UserDataEdit/${id}`)
-  }
+  // const userUpdate=(id)=>{
+  //  navigate(`/admin/AdminComponent/UserData/UserDataEdit/${id}`)
+  // }
  
   const [query, setQuery] = useState("");
   const keys = ["name"];
@@ -138,7 +138,7 @@ function UserData() {
                         </Dialog>
                         {/* <Link className="elink shadow rounded-circle" to={`/admin/AdminComponent/UserData/UserDataEdit/${e._id}`}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></Link> */}
                         {/* <button className="btn btn-outline-success ms-2 shadow rounded-circle " title="Update This User" onClick={()=>{if(window.confirm("Are you sure Update this data"))userUpdate(e._id)}}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button> */}
-                        <button className="btn btn-outline-success ms-2 rounded-circle " title="Update This User" onClick={handleClickOpen1}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button>
+                        {/* <button className="btn btn-outline-success ms-2 rounded-circle " title="Update This User" onClick={handleClickOpen1}><i class="zmdi zmdi-edit zmdi-hc-1x"></i></button>
                         <Dialog className="dialog" open={updateOpen} onClose={handleClose1} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
                                  <h4>Are you sure Update This User ?</h4>
@@ -147,7 +147,7 @@ function UserData() {
                                 <Button className="btn cancelbutton shadow text-white bg-dark" onClick={handleClose1}>Cancel</Button>
                                 <Button className="btn updatebutton shadow text-white bg-dark" onClick={()=>userUpdate(e._id)} >Update</Button>
                               </DialogActions>
-                        </Dialog>
+                        </Dialog> */}
                         <Link className="btn btn-outline-secondary ms-2 rounded-circle " title="Give Youre Feedback" to={`/admin/AdminComponent/UserData/UserPersnalFeedback/${id}/${e._id}`} ><i class="zmdi zmdi-comment-text zmdi-hc-1x"></i></Link>
                       </span>
                     </td>

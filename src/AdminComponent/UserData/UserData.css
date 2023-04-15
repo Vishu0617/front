@@ -113,7 +113,7 @@
 .cancelbutton:hover{
   color:hsla(0, 0%, 100%, 0.979);
   background-image:linear-gradient( rgba(30, 120, 238, 0.788),rgb(30, 120, 238, 0.788),rgb(30, 120, 238, 0.788));
-}
+}                            
 .updatebutton{
   background-color:  hsla(0, 3%, 12%, 0.979);
   color:hsla(0, 43%, 99%, 0.979);
