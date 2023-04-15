@@ -70,7 +70,8 @@ function UserLogin({setClientData}) {
                 {/* <!-- Email input --> */}
                 <i className="zmdi zmdi-email"></i> <label class="form-label" for="form1Example1">Email address</label>
                 <div class="form-control d-flex mb-4">
-                  <input type="email"  placeholder='Enter Email' name="email" maxLength={255} onChange={userInput} class="inputlogin" required />
+               
+                  <input type="email"  placeholder='Enter Email'  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  name="email" maxLength={255} onChange={userInput} class="inputlogin" required />
                 </div>
 
                 {/* <!-- Password input --> */}

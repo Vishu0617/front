@@ -2,6 +2,10 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import './ClientFileEdit.css'
+import Button from '@mui/material/Button';
+import {  toast } from 'react-toastify';
+
+
 
 function ClientFileEdit() {
   const [userFile, setUserFile] = useState();
@@ -23,16 +27,36 @@ function ClientFileEdit() {
       e.preventDefault();
     console.log(userFile);
     const fromData=new FormData();
-    fromData.append("file",userFile);
+    fromData.append("file",userFile[0]);
 
     axios.put(`http://localhost:3001/fileUpload/${id}`,fromData)
          .then((res)=>{
           console.log(res.data.message);
-          alert(res.data.message)
+          // alert(res.data.message)
+          toast.success(res.data.message, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
           navigate(`/client/UserComponent/Dashbord/ClientDashbord/${id}`)
          }).catch((err)=>{
           console.log(err.response.data.error);
-          alert(err.response.data.error)
+          // alert(err.response.data.error)
+          toast.error(err.response.data.error, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
          })
   
     };
@@ -40,26 +64,26 @@ function ClientFileEdit() {
   return (
     <>
      
-     <div className="shadow rounded signup-main mb-4 p-5 mt-4 container">
-        <h1 align="center">Select New Profile</h1>
+     <div className="rounded mb-4 p-5 mt-4 container">
+        <h6>Select New Profile</h6>
         <hr />
         <form className="row g-3 div-mid" onSubmit={uploadFile} encType="multipart/form-data">
-        <div className="col-md-6 form-control input-main shadow rounded  d-flex">
+        <div className="col-md-6 form-control input-main  rounded  d-flex">
             <label className="form-label mt-2"></label>
             <input
               className="inputsignup"
               type="file"
               name="file"
               onChange={userFileInput}
-              // required
+              required
             />
           </div>
                 <img className='upload' src={preview} alt=""  />
 
           <center className="submit-divr ">
-            <button className="submit btn btn-outline-success" type="Submit">
+            <Button className="btn bg-dark text-white" type="Submit">
              Upload Profile
-            </button>
+            </Button>
           </center>
         </form>
       </div>

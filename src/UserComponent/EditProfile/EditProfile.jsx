@@ -72,6 +72,7 @@ function EditProfile() {
               className="inputsignup "
               type="email"
               placeholder="Email Id"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               name="email"
               maxLength="255"
               value={fetchData.email}

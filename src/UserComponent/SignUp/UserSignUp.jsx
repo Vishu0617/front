@@ -125,6 +125,7 @@ function UserSignUp() {
                 value={values.email}
                 onBlur={handleBlur}
                 onChange={handleChange}
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 maxLength={255}
                 class="inputlogin"
                 // required
