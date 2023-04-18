@@ -24,7 +24,7 @@ function MyVehicale() {
         {vehicaleLength === 0 ? (
           <>
             <div class="mx-auto me-2" style={{ width: 800 }}>
-              <h1>you have note add youre vehicale</h1>
+              <h4>you have note add youre vehicale</h4>
             </div>
           </>
         ) : (

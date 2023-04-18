@@ -57,6 +57,14 @@
     .main{
         width: 90%;
     }
+    .goods-main{
+        background-color: hsla(0, 43%, 99%, 0.979);
+        font-weight: 500;
+        margin-right: -3%;
+        margin-left: 1%;
+        /* background-image: linear-gradient(  rgb(169, 224, 224),rgb(169, 224, 224),rgb(169, 224, 224)); */
+        /* backdrop-filter: blur(300px); */
+    }
     .add-main{
         margin-right: 5%;
         margin-bottom: 4%;

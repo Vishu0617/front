@@ -45,12 +45,12 @@ function Mygoods() {
   return (
     <>
       <div className="client-dashbord">
-        <div className="table-box goods-main container mb-2 shadow card ">
+        <div className="table-box container mb-2 p-2 shadow card">
           <h4 className="text-dark mb-4">Tripe Detail</h4>
           {length === 0 ? (
             <>
-              <div class="mx-auto" style={{ width: 600 }}>
-                <h1>don't have any transection yet</h1>
+              <div class="mx-auto" style={{ width: 350 }}>
+                <h4>don't have any transection yet</h4>
               </div>
             </>
           ) : (

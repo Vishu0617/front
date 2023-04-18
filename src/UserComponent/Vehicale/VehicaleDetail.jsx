@@ -85,8 +85,8 @@ function VehicaleDetail() {
           <div className="table-responsive">
             {vehicaleLength === 0 ? (
               <>
-                <div class="mx-auto text-white me-2" style={{ width: 800 }}>
-                  <h1 className="">There is No Vehicale available</h1>
+                <div class="mx-auto me-2" style={{ width: 800 }}>
+                  <h4>There is No Vehicale available</h4>
                 </div>
               </>
             ) : (

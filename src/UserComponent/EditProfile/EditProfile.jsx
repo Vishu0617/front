@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import './ClientFileEdit'
 import './ClientFileEdit.css'
-import { useNavigate, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Button from '@mui/material/Button'
 import {  toast } from 'react-toastify';
 
@@ -11,7 +11,7 @@ function EditProfile() {
 
     const [fetchData, setFetchData] = useState([])
     const {id}=useParams();
-    const navigate=useNavigate();
+    // const navigate=useNavigate();
     // console.log(id)
 
     useEffect(()=>{
@@ -40,7 +40,7 @@ function EditProfile() {
               progress: undefined,
               theme: "light",
               });
-            navigate(`/client/UserComponent/Dashbord/ClientDashbord/${id}`)
+            // navigate(`/client/UserComponent/Dashbord/ClientDashbord/${id}`)
         })
     }
 
@@ -49,7 +49,7 @@ function EditProfile() {
      <div className="">
         {/* <h1 align="center">Update Data</h1> */}
         <form className="row g-3 div-mid" onSubmit={updateData}>
-          <div className="col-md-6 form-control clientEditDiv shadow  rounded d-flex">
+          <div className="col-md-6 form-control clientEditDiv border-dark  rounded d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-account"></i>
             </label>
@@ -64,7 +64,7 @@ function EditProfile() {
              
             />
           </div>
-          <div className="col-md-6 form-control clientEditDiv  shadow rounded  d-flex">
+          <div className="col-md-6 form-control clientEditDiv  border-dark rounded  d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-email"></i>
             </label>
@@ -79,7 +79,7 @@ function EditProfile() {
               onChange={editData}
             />
           </div>
-          <div className="col-md-6 form-control clientEditDiv shadow rounded  d-flex">
+          <div className="col-md-6 form-control clientEditDiv border-dark rounded  d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-phone"></i>
             </label>
@@ -93,7 +93,7 @@ function EditProfile() {
               onChange={editData}
             />
           </div>
-          {/* <div className="col-md-6 form-control  shadow rounded  d-flex">
+          {/* <div className="col-md-6 form-control  border-dark rounded  d-flex">
             <label className="form-label mt-2">
               <i className="zmdi zmdi-lock"></i>
             </label>
