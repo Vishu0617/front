@@ -12,7 +12,7 @@ function ClientFileEdit() {
   const [preview, setPreview] = useState();
   const navigate=useNavigate();
   const {id}=useParams();
-  console.log(id)
+  // console.log(id)
 
 
   const userFileInput = (e) => {
@@ -25,9 +25,9 @@ function ClientFileEdit() {
 
   const uploadFile = (e) => {
       e.preventDefault();
-    console.log(userFile);
+    console.log(userFile.name);
     const fromData=new FormData();
-    fromData.append("file",userFile[0]);
+    fromData.append("file",userFile);
 
     axios.put(`http://localhost:3001/fileUpload/${id}`,fromData)
          .then((res)=>{
@@ -67,7 +67,7 @@ function ClientFileEdit() {
      <div className="rounded mb-4 p-5 mt-4 container">
         <h6>Select New Profile</h6>
         <hr />
-        <form className="row g-3 div-mid" onSubmit={uploadFile} encType="multipart/form-data">
+        <form className="row g-3 div-mid" onSubmit={uploadFile} encType='mul'>
         <div className="col-md-6 form-control input-main  rounded  d-flex">
             <label className="form-label mt-2"></label>
             <input

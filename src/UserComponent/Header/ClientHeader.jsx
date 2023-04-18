@@ -149,10 +149,10 @@ function ClientHeader() {
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Mygoods/AddMyGoods/${id}`} > <i class="zmdi zmdi-airplane"></i> Add Trips </NavLink>
         </li>
         <li className="nav-item mt-2">
-        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Vehicale/Vehicale/${id}`} > <i class="zmdi zmdi-truck"></i>  Add Vehicale </NavLink>
+        <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/client/UserComponent/Vehicale/VehicaleDetail/${id}`} > <i class="zmdi zmdi-truck"></i> Vehicale </NavLink> 
         </li>
         <li className="nav-item mt-2">
-        <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/client/UserComponent/Vehicale/VehicaleDetail/${id}`} > <i class="zmdi zmdi-truck"></i> Vehicale </NavLink> 
+        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Vehicale/Vehicale/${id}`} > <i class="zmdi zmdi-truck"></i>  Add Vehicale </NavLink>
         </li>
         <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/client/UserComponent/Feedback/Feedback/${id}`} >  <i class="zmdi zmdi-comment-alt-text"></i> Feedback </NavLink> 
