@@ -116,21 +116,21 @@ function Contact() {
               <div className="contact-form shadow bg-white rounded">
                 <h3>Get a Quote</h3>
                 <div className="row ">
-                  <div className="col-md-6 col-12 ">
+                  <div className="col-md-6 ">
                     <label className="form-label fw-bold ">Your Name</label>
-                    <input type="text" name='cname' onChange={dataInput} placeholder="Enter youre name" className=" border-dark input-feild" />
+                    <input type="text" name='cname' onChange={dataInput} placeholder="Enter youre name" className=" border-dark form-control" />
                   </div>
-                  <div className="col-md-6 col-12 ">
+                  <div className="col-md-6">
                     <label className="form-label  fw-bold ">Email Address</label>
-                    <input type="email" name='cemail' onChange={dataInput} placeholder="blackpanther@gmail.com" className=" border-dark input-feild" />
+                    <input type="email" name='cemail' onChange={dataInput} placeholder="blackpanther@gmail.com" className=" border-dark form-control" />
                   </div>
-                  <div className="col-md-6 col-12 ">
+                  <div className="col-md-6">
                     <label className="form-label  fw-bold ">Phone Number</label>
-                    <input type="text" name='cphone' onChange={dataInput} placeholder="9157167899" className=" border-dark input-feild" />
+                    <input type="text" name='cphone' onChange={dataInput} placeholder="9157167899" className=" border-dark form-control" />
                   </div>
-                  <div className="col-md-6 col-12 ">
-                    <label className="form-label  fw-bold ">Address</label>
-                    <input type="text" name='address' onChange={dataInput} placeholder="wakanda" className=" border-dark input-feild" />
+                  <div className="col-md-6">
+                    <label className="form-label fw-bold ">Address</label>
+                    <input type="text" name='address' onChange={dataInput} placeholder="wakanda" className=" border-dark form-control" />
                   </div>
                   <div className="col-md-12">
                     <label className="form-label fw-bold ">Message</label>
