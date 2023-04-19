@@ -71,8 +71,8 @@ function Contact() {
       <section className="contact-info container rounded  mt-3">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-12">
-              <div className="contact-wrapper">
+            <div className="col-lg-6 col-12 shadow border-dark rounded">
+              <div className="contact-wrapper ">
                 <div className="contact-text company-content">
                   <span>Get a Quote</span>
                   <h2> Get in Touch And We'll Help Your Business </h2>
