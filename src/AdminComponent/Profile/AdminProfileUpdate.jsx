@@ -1,16 +1,13 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom';
-import './ClientFileEdit.css'
+import { useParams } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import {  toast } from 'react-toastify';
 
-
-
-function ClientFileEdit() {
+function AdminProfileUpdate() {
   const [userFile, setUserFile] = useState();
   const [preview, setPreview] = useState();
-  const navigate=useNavigate();
+  // const navigate=useNavigate();
   const {id}=useParams();
   // console.log(id)
 
@@ -29,7 +26,7 @@ function ClientFileEdit() {
     const fromData=new FormData();
     fromData.append("file",userFile);
 
-    axios.put(`http://localhost:3001/fileUpload/${id}`,fromData)
+    axios.put(`http://localhost:3001/changeProfile/${id}`,fromData)
          .then((res)=>{
           console.log(res.data.message);
           // alert(res.data.message)
@@ -43,7 +40,6 @@ function ClientFileEdit() {
             progress: undefined,
             theme: "light",
             });
-          navigate(`/client/UserComponent/Dashbord/ClientDashbord/${id}`)
          }).catch((err)=>{
           console.log(err.response.data.error);
           // alert(err.response.data.error)
@@ -60,11 +56,9 @@ function ClientFileEdit() {
          })
   
     };
-
   return (
     <>
-     
-     <div className="rounded mb-4 p-5 mt-4 container">
+    <div className="rounded mb-4 p-5 mt-4 container">
         <h6>Select New Profile</h6>
         <hr />
         <form className="row g-3 div-mid" onSubmit={uploadFile} encType='mul'>
@@ -78,7 +72,7 @@ function ClientFileEdit() {
               required
             />
           </div>
-          <div className='upload '>
+          <div className=''>
                 <img className='rounded-circle' height={100} width={100} src={preview} alt=""  />
           </div>
 
@@ -93,4 +87,4 @@ function ClientFileEdit() {
   )
 }
 
-export default ClientFileEdit
+export default AdminProfileUpdate

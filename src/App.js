@@ -23,6 +23,8 @@ import AdminViewDetail from './AdminComponent/Dashbord/Vehicale/AdminViewDetail'
 import UserFeedback from './AdminComponent/Feedback/UserFeedback';
 import PaymentHistory from './AdminComponent/Goods/PaymentHistory';
 import UserPersnalFeedback from './AdminComponent/UserData/UserPersnalFeedback';
+import AdminProfileUpdate from './AdminComponent/Profile/AdminProfileUpdate';
+
 
 
 // user
@@ -85,6 +87,7 @@ function App() {
           <Route path='/admin/AdminComponent/Dashbord/AdminDashbord/:id' element={<AdminDashbord adminData={adminData} />}/>
           <Route path='/admin/AdminComponent/Profile/AdminProfile/:id' element={<AdminDashbord />}/>
           <Route path='/admin/AdminComponent/ProfileEdit/EditProfile/:id' element={<EditProfile />}/>
+          <Route path='/admin/AdminComponent/Profile/AdminProfileUpdate/:id' element={<AdminProfileUpdate />}/>
           <Route path='/admin/AdminComponent/UserData/UserData/:id' element={<UserData/>}/>
           <Route path='/admin/AdminComponent/UserData/UserDataEdit/:id' element={<UserDataEdit adminData={adminData} />}/>
           <Route path='/admin/AdminComponent/UserContectDetail/UserContectDetail/:id' element={<UserContectDetail/>}/>

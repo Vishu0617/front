@@ -1,7 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
-import {  NavLink,useNavigate,useParams } from 'react-router-dom'
+import {  Link, NavLink,useNavigate,useParams } from 'react-router-dom'
 import './AdminHeader.css'
+import AdminProfile from '../Profile/AdminProfile';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
@@ -31,6 +32,20 @@ function AdminHeader() {
   const handleClose = () => {
     setOpen(false);
   };
+   //logout function's end 
+
+  //  change profile 
+  const [isSetOpen, setIsSetOpen] = useState(false)
+
+  const handleClickOpen1=()=>{
+    setIsSetOpen(true)
+  }
+
+  const handleClose1=()=>{
+    setIsSetOpen(false)
+  }
+
+  //  change profile end
 
   const logout=()=>{
     axios.get("http://localhost:3001/logout").then((res) => {
@@ -59,8 +74,19 @@ function AdminHeader() {
 <div className="navbar fixed-top navbar-expand-lg ahomeHeader shadow ">
   <div className="container-fluid">
     <div className="dropdown d-profile">
-      <img className="logo dropdown-toggle border-dark" data-bs-toggle="dropdown" src={`http://localhost:3001/${fetchData.file}`} alt="profile" />
-       {/* <br/><b>{fetchData.name}</b> */}
+        <Link title='Change Profile Photo'  onClick={handleClickOpen1} >
+         <img className="logo border-dark" src={`http://localhost:3001/${fetchData.file}`} alt="profile" />
+        </Link>
+        {/* change profile photo */}
+        <Dialog className="dialog" open={isSetOpen} onClose={handleClose1} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
+            <DialogContent className="bg-light" id="alert-dialog-description">
+            <AdminProfile />
+            </DialogContent>
+            <DialogActions className="bg-light">
+              <Button className="btn payCancel shadow text-white bg-dark" onClick={handleClose1}>Cancel</Button>
+            </DialogActions>
+          </Dialog>
+      {/* <br/><b>{fetchData.name}</b> */}
       </div>
       <h1 className='admin-dash'>Dashboard</h1>
 
@@ -70,7 +96,7 @@ function AdminHeader() {
     <div className="collapse links-div navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-2 ms-auto mb-lg-0">
         <li className="nav-item mt-2">
-        <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/admin/AdminComponent/Dashbord/AdminDashbord/${id}`} ><i className="zmdi zmdi-home zmdi-hc-1x" ></i> Home </NavLink>
+        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/Dashbord/AdminDashbord/${id}`} ><i className="zmdi zmdi-home zmdi-hc-1x" ></i> Home </NavLink>
         </li>
         <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/admin/AdminComponent/UserData/UserData/${id}`}><i className="zmdi zmdi-accounts-alt zmdi-hc-1x"></i> Data</NavLink>

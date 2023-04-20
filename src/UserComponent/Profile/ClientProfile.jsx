@@ -15,15 +15,15 @@ function ClientProfile() {
     // console.log(id)
 
     //logout function's
-  const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
 
-  const handleClose = () => {
-    setOpen(false);
-  };
+    const handleClose = () => {
+      setOpen(false);
+    };
 
     useEffect(()=>{
         axios.get(`http://localhost:3001/fetchData/${id}`).then((res)=>{
@@ -36,17 +36,14 @@ function ClientProfile() {
     <>
      <div className="rounded mb-0 viwProfile card p-5 container">
         <div className="row g-3 div-mid">
-          <center><img className="profile shadow" src={`http://localhost:3001/${fetchData.file}`} alt="profile" /><br/>
-           <Link className='edit-link' onClick={handleClickOpen} to="#">Edit Profile</Link>
+          <center><img className="profile" src={`http://localhost:3001/${fetchData.file}`} alt="profile" /><br/>
+           <Link className='edit-link' onClick={handleClickOpen} to="#">Update Profile</Link>
            <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
             <DialogContent className="bg-light" id="alert-dialog-description">
               <ClientFileEdit />
             </DialogContent>
             <DialogActions className="bg-light">
               <Button className="btn payCancel shadow text-white bg-dark" onClick={handleClose}>Cancel</Button>
-              {/* <Button className="btn paybutton shadow text-white bg-dark">
-                Logout
-              </Button> */}
             </DialogActions>
           </Dialog>
           </center>

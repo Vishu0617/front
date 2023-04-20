@@ -87,7 +87,7 @@ function ClientDashbord() {
           </>
         ) : (
           <table className="table table-bordered text-light border-dark  mb-0">
-            <thead className=" bg-dark"> 
+            <thead className="bg-dark"> 
               <tr>
                 <th>Index Id</th>
                 <th>Name </th>
