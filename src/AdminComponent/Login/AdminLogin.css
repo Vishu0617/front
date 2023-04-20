@@ -1,14 +1,14 @@
 
 ::-webkit-input-placeholder { 
-    color: rgb(255, 251, 251);
+    color: rgb(0, 0, 0);
   }
   
   :-ms-input-placeholder { 
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
   
   ::placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
   }
 .logo img {
     height: 75px;
