@@ -70,8 +70,10 @@
    padding: 45px 0;
     padding-top: 6%;
     height: 100vh;
+    /* background-image: url(../../img/icon/bg-0.jpg); */
+    background-size: cover;
     background-repeat: no-repeat;
-    /* background-image: linear-gradient( rgb(0, 86, 184),rgb(147, 179, 228),rgb(25, 49, 185)); */
+    background-image: linear-gradient( rgb(0, 86, 184),rgb(147, 179, 228),rgb(25, 49, 185));
     color:hsla(0, 0%, 13%, 0.979); 
     animation: changeBg1 30s infinite;
 }
@@ -106,6 +108,11 @@
     width: 20%;
     margin-left: 0%;
 
+}
+.forget-body{
+    background-image: url(../../img/icon/bg-0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 @media screen and (max-width: 1199px) {
    .login-main{

@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import {  toast } from 'react-toastify';
-import video from '../../img/icon/cloud1.mp4'
+// import video from '../../img/icon/cloud1.mp4'
 import Button from '@mui/material/Button';
 
 
@@ -68,7 +68,7 @@ function PasswordReset() {
   return (
     <>
     <div className="admin-login-body">
-    <video autoPlay muted loop src={video} className="login-video"></video>
+    {/* <video autoPlay muted loop src={video} className="login-video"></video> */}
       <div className="shadow rounded signup-main mb-4 p-5 mt-4 container">
         <h4 align="">Generate New Password</h4>
         <hr />

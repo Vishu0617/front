@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./AdminLogin.css";
 // import video from '../../img/icon/cloud1.mp4'
@@ -191,11 +191,18 @@ function AdminLogin({ setAdminData }) {
                 Sign up
               </Button>
               <hr class="my-4" />
+              <Link
+              className="link "
+              to="/AdminComponent/ForgetPassword/ForgetPassword"
+            >
+              Forgot Password
+            </Link>
               {/* <small class="text-muted">
                 By clicking <Link className="link" align="right" to="/AdminComponent/SignUp/SignUp">Registration</Link>
               </small> */}
             </form>
           </div>
+          
         </div>
       </div>
     </>

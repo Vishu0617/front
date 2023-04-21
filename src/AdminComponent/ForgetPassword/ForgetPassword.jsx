@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import {  toast } from 'react-toastify';
-import video from '../../img/icon/cloud1.mp4'
+// import video from '../../img/icon/cloud1.mp4' 
 import Button from '@mui/material/Button';
 
 
@@ -54,7 +54,7 @@ function ForgetPassword() {
   return (
     <>
     <div className="admin-login-body">
-      <video autoPlay muted loop src={video} className="login-video"></video>
+      {/* <video autoPlay muted loop src={video} className="login-video"></video> */}
         <div className="shadow rounded signup-main mb-4 p-5 mt-4 container">
         <h5>Enter Your E-mail</h5><hr/>
             <form className="row g-3 mt-2 div-mid">
