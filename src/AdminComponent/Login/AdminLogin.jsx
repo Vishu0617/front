@@ -134,6 +134,7 @@ function AdminLogin({ setAdminData }) {
             </h1>
             <p class="col-lg-10 fs-4">
              thisis the simple collage base project.
+             devloped by <b>patel vishal </b>
             </p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">

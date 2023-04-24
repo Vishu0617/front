@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './ClientPayment.css'
 import Button from '@mui/material/Button';
+import {  toast } from 'react-toastify';
+
 
 
 function OtpVerification() {
@@ -22,10 +24,30 @@ function OtpVerification() {
         console.log(id)
         axios.post(`http://localhost:3001/clientOtpVerification/${id}`,cheackOtp).then((res)=>{
           console.log(res.data.message)
-          alert(res.data.message)
+          toast.success(res.data.message, {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+          // alert(res.data.message)
           navigate(`/client/UserComponent/Mygoods/Mygoods/${id}`)
         }).catch((error)=>{
-            alert(error.response.data.error)
+            // alert(error.response.data.error)
+            toast.error(error.response.data.error, {
+              position: "top-center",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "light",
+              });
             console.log(error.response.data.error)
         })
     }

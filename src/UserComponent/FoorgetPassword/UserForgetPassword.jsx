@@ -50,8 +50,8 @@ function UserForgetPassword() {
 
   return (
     <>
-    <div className="client-dashbord">
-     <div className=" rounded forget-body shadow container">
+    <div className="client-dashbord ">
+     <div className=" rounded forget-body1 shadow container">
      <h5 align="center">Enter E-mail</h5><hr/>
         <form className="row g-3 mt-2" onSubmit={handelEmail}>
         <center>   <div className="col-md-6 form-control forget-main rounded  d-flex">
