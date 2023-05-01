@@ -437,14 +437,13 @@ function Home({setAdminData,setClientData}) {
     </div>
 </div>
 
-<section className="review-block bg-white mt-4 mb-4">
+{/* <section className="review-block bg-white mt-4 mb-4">
     <div className="container">
         <div className="row">
             <div className="col-md-12 text-center">
                 <div className="company-content review-title">
                     <span>Testimonials</span>
                     <h2>Our Client's Feedback </h2>
-                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p> */}
                 </div>
             </div>
        {feedback.map((e)=>{
@@ -459,7 +458,6 @@ function Home({setAdminData,setClientData}) {
                         </div>
                         <div className="r-detail">
                             <h5>{e.client.name}</h5>
-                            {/* <p className="mb-0">Co-Founder</p> */}
                         </div>
                     </div>
                 </div>
@@ -468,8 +466,44 @@ function Home({setAdminData,setClientData}) {
        })}
         </div>
     </div>
-</section>   
+</section>    */}
 
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div className="col-md-12 text-center">
+          <div className="company-content review-title">
+              <span>Testimonials</span>
+              <h2>Our Client's Feedback </h2>
+          </div>
+      </div>
+  <div class="carousel-inner">
+  {feedback.map((e)=>{
+    return(<>
+        <div class="carousel-item active">
+          <div className="review-box card">
+              <div className="qute-i card mb-2"><span ><i class="zmdi zmdi-quote"></i></span></div>
+              <div className="client-img container">
+                  <img className="fbprofile" src={`http://localhost:3001/${e.client.file}`} alt="img" />
+              </div>
+              <h5 className="container">{e.client.name}</h5>
+              <div className="client-wrap d-flex align-items-center">
+                <div className="r-detail container">
+                  <p className="r-text">{e.fbmessage}</p>
+                </div>
+              </div>
+          </div>
+        </div>
+    </>)
+  })}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <Footer />
     </>
   );
