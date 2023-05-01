@@ -76,7 +76,7 @@ function UserContectDetail() {
           {contectLength === 0 ? (
             <>
               <div class="mx-auto " style={{ width: 600 }}>
-                <h1>don'n have contect use</h1>
+                <h1>don'n have contact use</h1>
               </div>
             </>
           ) : (
@@ -86,7 +86,7 @@ function UserContectDetail() {
                   <th>Index Id</th>
                   <th>Client Name</th>
                   <th>Client Email</th>
-                  <th>Client Contect</th>
+                  <th>Client Contact</th>
                   <th>Client Address</th>
                   <th>Client Message</th>
                   <th>Action</th>

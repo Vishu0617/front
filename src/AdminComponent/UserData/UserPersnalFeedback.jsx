@@ -96,7 +96,7 @@ function UserPersnalFeedback() {
             <input
               className="shadow me-2 bg-white border-danger rounded-1 feed-input"
               type="text"
-              placeholder="Enter youre Sugestion..."
+              placeholder="Enter youre Suggestion..."
               name="feedback"
               onChange={inputfb}
               // required

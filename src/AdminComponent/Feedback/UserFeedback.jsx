@@ -78,7 +78,7 @@ function UserFeedback() {
               <tr>
                 <th>Index Id</th>
                 <th>User Name</th>
-                <th>User Contect</th>
+                <th>User Contact</th>
                 <th>User E-mail</th>
                 <th>User Message</th>
                 <th>Action</th>

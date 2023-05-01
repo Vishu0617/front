@@ -71,6 +71,7 @@
   background: transparent;
   color: #fff;
   backdrop-filter: blur(10px);
+  height:100vh;
   transition: 0.1s;
 }
 .userprofile1:hover{

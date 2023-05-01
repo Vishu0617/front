@@ -122,7 +122,7 @@ function ClientHeader() {
         <div className="modal-dialog">
           <div className="modal-content  userprofile shadow">
             <div className="modal-header">
-              <h5 className="modal-title" id="exampleModalLabel">Reviews</h5>
+              <h5 className="modal-title" id="exampleModalLabel">Review</h5>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
@@ -143,16 +143,16 @@ function ClientHeader() {
           <NavLink  className={({ isActive }) => linkClasses(isActive)}   to={`/client/UserComponent/Dashbord/ClientDashbord/${id}`} > <i class="zmdi zmdi-home"></i> Home </NavLink>
         </li>
         <li className="nav-item mt-2">
-        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Mygoods/Mygoods/${id}`} >  <i class="zmdi zmdi-airplane"></i> Trips </NavLink>
+        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Mygoods/Mygoods/${id}`} >  <i class="zmdi zmdi-airplane"></i> Trip </NavLink>
         </li>
         <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Mygoods/AddMyGoods/${id}`} > <i class="zmdi zmdi-airplane"></i> Add Trips </NavLink>
         </li>
         <li className="nav-item mt-2">
-        <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/client/UserComponent/Vehicale/VehicaleDetail/${id}`} > <i class="zmdi zmdi-truck"></i> Vehicale </NavLink> 
+        <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/client/UserComponent/Vehicale/VehicaleDetail/${id}`} > <i class="zmdi zmdi-truck"></i> Vehicle </NavLink> 
         </li>
         <li className="nav-item mt-2">
-        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Vehicale/Vehicale/${id}`} > <i class="zmdi zmdi-truck"></i>  Add Vehicale </NavLink>
+        <NavLink className={({ isActive }) => linkClasses(isActive)} to={`/client/UserComponent/Vehicale/Vehicale/${id}`} > <i class="zmdi zmdi-truck"></i>  Add Vehicle </NavLink>
         </li>
         <li className="nav-item mt-2">
         <NavLink className={({ isActive }) => linkClasses(isActive)}  to={`/client/UserComponent/Feedback/Feedback/${id}`} >  <i class="zmdi zmdi-comment-alt-text"></i> Feedback </NavLink> 

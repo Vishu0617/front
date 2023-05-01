@@ -75,12 +75,12 @@ function AdminViewDetail() {
      <div align="center">
         <input className="userSearcrh border rounded-1" placeholder="Search..." onChange={(e) => setQuery(e.target.value.toLowerCase())} />
        </div>
-        <h4 className="text-dark mb-4">Vehicale Detail</h4>
+        <h4 className="text-dark mb-4">Vehicle Detail</h4>
         <div className="table-responsive">
         {vehicaleLength === 0 ? (
           <>
             <div class="mx-auto me-2" style={{ width: 800 }}>
-              <h1>There is No Vehicale available</h1>
+              <h1>There is No Vehicle available</h1>
             </div>
           </>
         ) : (
@@ -89,12 +89,12 @@ function AdminViewDetail() {
               <tr>
                 <th>Index Id</th>
                 <th>Name </th>
-                <th>Contect</th>
-                <th>Vehicale Name</th>
-                <th>Vehicale Number</th>
-                <th>Vehicale Capacity</th>
-                <th>Vehicale Starting</th>
-                <th>Vehicale Destination</th>
+                <th>Contact</th>
+                <th>Vehicle Name</th>
+                <th>Vehicle Number</th>
+                <th>Vehicle Capacity</th>
+                <th>Vehicle Starting</th>
+                <th>Vehicle Destination</th>
                 <th>Action</th>
                
               </tr>
@@ -115,7 +115,7 @@ function AdminViewDetail() {
                     <td> <button className="btn btn-outline-danger action  rounded-circle" onClick={handleClickOpen} ><i class="zmdi zmdi-delete zmdi-hc-1x"></i></button>
                         <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
-                                 <h4>Are you sure delete this Vehicale detail ?</h4>
+                                 <h4>Are you sure delete this Vehicle detail ?</h4>
                               </DialogContent>
                               <DialogActions className="bg-light">
                                 <Button className="btn cancelbutton shadow text-white bg-dark" onClick={handleClose}>Cancel</Button>

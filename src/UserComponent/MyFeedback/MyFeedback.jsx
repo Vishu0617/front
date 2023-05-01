@@ -22,7 +22,7 @@ function MyFeedback() {
     {length===0 ?(
        <>
        <div class="mx-auto" style={{ width: 400 }}>
-         <h4 className="">There is no rewiews yet</h4>
+         <h4 className="">There is no review yet</h4>
        </div>
      </>
      ):(

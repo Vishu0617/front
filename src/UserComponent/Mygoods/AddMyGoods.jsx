@@ -56,7 +56,7 @@ function AddMyGoods() {
     <>
       <div className='client-dashbord'>
       <form className="row g-3 add-goods-main shadow rounded" onSubmit={inputGoods}>
-            <h1>Add Trips</h1><hr/>
+            <h4>Add Trips</h4><hr/>
             <div className="col-md-6 input-div ">
               <label  className="form-label"><b>Starting Point :-</b></label>
               <input type="text" className="form-control border-dark add-goods" name='spoint' onChange={inputData} placeholder='Enter youre curent Address'  />
@@ -67,14 +67,14 @@ function AddMyGoods() {
             </div>
             <div className="col-md-6 input-div">
               <label  className="form-label"><b>Client Number  :-</b></label>
-              <input type="text" className="form-control border-dark add-goods" name='cphone' onChange={inputData} maxLength={10} placeholder="Contect detail"  />
+              <input type="text" className="form-control border-dark add-goods" name='cphone' onChange={inputData} maxLength={10} placeholder="Contact detail"  />
             </div>
             <div className="col-md-6 input-div">
               <label  className="form-label"><b>Date  :-</b></label>
               <input type="Date" className="form-control border-dark add-goods" name='date' onChange={inputData}  />
             </div>
             <div className="col-md-6 input-div">
-              <label  className="form-label"><b>Vehicale Km  :-</b></label>
+              <label  className="form-label"><b>Vehicle Km  :-</b></label>
               <input type="text" className="form-control border-dark add-goods" name='km' onChange={inputData} placeholder="distance"  />
             </div>
             <div className="col-md-6 input-div">

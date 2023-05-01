@@ -73,12 +73,12 @@ function ClientPayment({clientData}) {
             <input type="text" className="form-control" name='cnumber'  maxLength={16} minLength={3} onChange={inputPayment} placeholder='Enter Card Number'  />
           </div>
           <div className="col-md-6  mt-3">
-            <label  className="form-label"><b>Expi Month and Year :-</b></label>
+            <label  className="form-label"><b>Expired Month and Year :-</b></label>
             <input type="month" className="form-control" name='exptime'  onChange={inputPayment} placeholder="Expi Month and Year"  />
           </div>
           <div className="col-md-6  mt-3">
-            <label  className="form-label"><b>Cvv Number :-</b></label>
-            <input type="text" className="form-control" name='cvv' maxLength={3} minLength={3}  onChange={inputPayment} placeholder="Enter Cvv number"  />
+            <label  className="form-label"><b>CVV Number :-</b></label>
+            <input type="text" className="form-control" name='cvv' maxLength={3} minLength={3}  onChange={inputPayment} placeholder="Enter CVV number"  />
           </div>
           <div className="col-md-6  mt-3">
             <label  className="form-label"><b>Amount :-</b></label>

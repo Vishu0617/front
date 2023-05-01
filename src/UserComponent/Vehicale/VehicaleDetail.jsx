@@ -81,12 +81,12 @@ function VehicaleDetail() {
     <>
       <div className="client-dashbord">
         <div className="table-box myvehical-color mb-2 shadow card ">
-          <h4 className="mb-4">Vehicale Detail</h4>
+          <h4 className="mb-4">Find your way</h4>
           <div className="table-responsive">
             {vehicaleLength === 0 ? (
               <>
                 <div class="mx-auto me-2" style={{ width: 800 }}>
-                  <h4>There is No Vehicale available</h4>
+                  <h4>There is No Vehicle available</h4>
                 </div>
               </>
             ) : (
@@ -95,13 +95,13 @@ function VehicaleDetail() {
                   <tr>
                     <th width={10}>Id</th>
                     <th width={50}>Name </th>
-                    <th width={10}>Contect</th>
+                    <th width={10}>Contact</th>
                     <th>E-mail</th>
-                    <th>Vehicale Name</th>
-                    <th>Vehicale Number</th>
-                    <th>Vehicale Capacity</th>
-                    <th>Vehicale Starting</th>
-                    <th>Vehicale Destination</th>
+                    <th>Vehicle Name</th>
+                    <th>Vehicle Number</th>
+                    <th>Vehicle Capacity</th>
+                    <th>Vehicle Starting</th>
+                    <th>Vehicle Destination</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -147,7 +147,7 @@ function VehicaleDetail() {
                                 <Button type="button" onClick={handleClickOpen} class="btn bg-dark text-white book-btn">Submit</Button>
                                   <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                                     <DialogContent className="bg-light" id="alert-dialog-description" >
-                                      <h4>Are you sure Book this Vehicale</h4>
+                                      <h4>Are you sure Book this Vehicle</h4>
                                     </DialogContent>
                                     <DialogActions className="bg-light">
                                       <Button className="btn payCancel shadow text-white bg-dark" onClick={handleClose}> Cancel</Button>

@@ -133,8 +133,8 @@ function AdminLogin({ setAdminData }) {
              wellcome to transport triangle
             </h1>
             <p class="col-lg-10 fs-4">
-             thisis the simple collage base project.
-             devloped by <b>patel vishal </b>
+             this is the simple collage base project.
+             developed by <b>Patel Vishal </b>
             </p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">

@@ -169,7 +169,7 @@ function UserSignUp() {
 
           <div className="col-md-6 input-div">
             <label class="form-label fw-bold" >
-              <i className="zmdi zmdi-lock"></i> User Conform Password
+              <i className="zmdi zmdi-lock"></i> User Confirm Password
             </label>
             <p>{errors.pwd && touched.pwd ? (
             <span className="errorMassage1">{errors.pwd}</span>
@@ -177,7 +177,7 @@ function UserSignUp() {
             <div class="form-control d-flex mb-4">
               <input
                 type={showPwd}
-                placeholder="Enter Conform Password"
+                placeholder="Enter Confirm Password"
                 name="cpwd"
                 value={values.cpwd}
                 onBlur={handleBlur}
@@ -245,7 +245,7 @@ function UserSignUp() {
           </div>
         
           <div className="text-end">
-            <label>i have allredy account !!</label>
+            <label>i have alredy account !!</label>
             <label>
               <Link className="user-login-link" to="/UserComponent/UserLogin/UserLogin">
                 Back login

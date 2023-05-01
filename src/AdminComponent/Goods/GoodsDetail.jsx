@@ -98,12 +98,12 @@ function GoodsDetail() {
               onChange={(e) => setQuery(e.target.value.toLowerCase())}
             />
           </div>
-          <h4 className="text-dark mb-1">User Transection Detail</h4>
+          <h4 className="text-dark mb-1">User Transaction Detail</h4>
           <div className="table-responsive">
             {goodsLength === 0 ? (
               <>
                 <div class="mx-auto" style={{ width: 600 }}>
-                  <h1>There is no transection yet</h1>
+                  <h1>There is no transaction yet</h1>
                 </div>
               </>
             ) : (
@@ -113,15 +113,15 @@ function GoodsDetail() {
                     <th>Index Id</th>
                     <th>Starting</th>
                     <th>Destination</th>
-                    <th>Drivar Contect</th>
+                    <th>Driver Contact</th>
                     <th>Sending Date</th>
                     <th>Km</th>
                     <th>Price</th>
                     <th>Owner Name</th>
-                    <th>Owner Contect</th>
+                    <th>Owner Contact</th>
                     <th>Payment Status</th>
                     {/* <th>Goods Status</th> */}
-                    <th>Descri</th>
+                    <th>Description</th>
                     <th>Action</th>
                   </tr>
                 </thead>

@@ -19,12 +19,12 @@ function MyVehicale() {
     <>
     <div className="client-dashbord">
       <div className="table-box myvehicale container mb-2 shadow card ">
-        <h4 className="text-dark mb-4">My Vehicale Detail</h4>
+        <h4 className="text-dark mb-4">My Vehicle Detail</h4>
         <div className="table-responsive">
         {vehicaleLength === 0 ? (
           <>
             <div class="mx-auto me-2" style={{ width: 800 }}>
-              <h4>you have note add youre vehicale</h4>
+              <h4>you have note add youre vehicle</h4>
             </div>
           </>
         ) : (
@@ -33,12 +33,12 @@ function MyVehicale() {
               <tr>
                 <th>Index Id</th>
                 <th>Name </th>
-                <th>Contect</th>
-                <th>Vehicale Name</th>
-                <th>Vehicale Number</th>
-                <th>Vehicale Capacity</th>
-                <th>Vehicale Starting</th>
-                <th>Vehicale Destination</th>
+                <th>Contact</th>
+                <th>Vehicle Name</th>
+                <th>Vehicle Number</th>
+                <th>Vehicle Capacity</th>
+                <th>Vehicle Starting</th>
+                <th>Vehicle Destination</th>
               </tr>
             </thead>
             {vehicale.map((e,index)=>{

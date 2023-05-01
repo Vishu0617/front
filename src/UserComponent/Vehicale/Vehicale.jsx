@@ -56,8 +56,8 @@ function Vehicale() {
     <>
       <div className="client-dashbord">
         <div className=" rounded vehicale-main card mb-4 p-5 container">
-          <h5>ADD YOUR VEHICALE</h5>
-         <Link className="viewVehicale" to={`/client/UserComponent/Vehicale/MyVehicale/${id}`}>My Vehicale</Link>
+          <h5>ADD YOUR VEHICLE</h5>
+         <Link className="viewVehicale" to={`/client/UserComponent/Vehicale/MyVehicale/${id}`}>My Vehicle</Link>
           <hr />
           <form className="row g-3 div-mid" onSubmit={submitData}>
             {/* {id} */}
@@ -75,7 +75,7 @@ function Vehicale() {
               <input
                 className=" vehicaleData "
                 type="text"
-                placeholder="Owner Contect Detail"
+                placeholder="Owner Contact Detail"
                 name="phone"
                 onChange={inputData}
                 maxLength="10"
@@ -86,7 +86,7 @@ function Vehicale() {
               <input
                 className=" vehicaleData "
                 type="text"
-                placeholder="Enter Vahicale Model Name"
+                placeholder="Enter Vahicle Model Name"
                 name="vname"
                 onChange={inputData}
                 
@@ -96,7 +96,7 @@ function Vehicale() {
               <input
                 className=" vehicaleData "
                 type="text"
-                placeholder="Enter Vahicale Number"
+                placeholder="Enter Vahicle Number"
                 name="vnumber"
                 onChange={inputData}
                 
@@ -116,7 +116,7 @@ function Vehicale() {
               <input
                 className=" vehicaleData "
                 type="text"
-                placeholder="Enter Vahicale Capacity"
+                placeholder="Enter Vahicle Capacity"
                 name="capacity"
                 onChange={inputData}
             />
@@ -125,7 +125,7 @@ function Vehicale() {
               <input
                 className=" vehicaleData "
                 type="text"
-                placeholder="Enter Vahicale Start Location"
+                placeholder="Enter Vahicle Start Location"
                 name="slocation"
                 onChange={inputData}
               />
@@ -134,7 +134,7 @@ function Vehicale() {
               <input
                 className=" vehicaleData "
                 type="text"
-                placeholder="Enter Vahicale Destination Location"
+                placeholder="Enter Vahicle Destination Location"
                 name="dlocation"
                 onChange={inputData}
               />

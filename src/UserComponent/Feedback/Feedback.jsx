@@ -66,7 +66,7 @@ function Feedback() {
             </div>
             <div className="col-md-6">
               <label  className="form-label fw-bold text-dark">Suggestion:-</label>
-              <textarea className="form-control fbinput border-dark"  rows="3" name='fbmessage' placeholder='Type youre feedback hear...............' onChange={inputData}></textarea>
+              <textarea className="form-control fbinput border-dark"  rows="3" name='fbmessage' placeholder='Type your feedback here...............' onChange={inputData}></textarea>
             </div>  
 
            

@@ -113,9 +113,9 @@ function AdminDashbord() {
                           <th width={10}>Index Id</th>
                           <th width={20}>Starting Point </th>
                           <th>Destination Point</th>
-                          <th>Customer Contect</th>
+                          <th>Customer Contact</th>
                           <th>Date</th>
-                          <th width={10}>Vehicale Km</th>
+                          <th width={10}>Vehicle Km</th>
                           <th>Payment</th>
                           <th>Descripteion</th>
                           <th>Payment Status</th>

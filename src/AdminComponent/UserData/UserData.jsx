@@ -103,7 +103,7 @@ function UserData() {
                 <th width={10}>User Profile </th>
                 <th>User Name</th>
                 <th width={25}>User Email</th>
-                <th width={10}>User Contect</th>
+                <th width={10}>User Contact</th>
                 <th width={25}>Action</th>
               </tr>
             </thead>
@@ -129,7 +129,7 @@ function UserData() {
                         {/* <Button className="bg-dark text-white shadow rounded-circle" onClick={handleClickOpen}><i class="zmdi zmdi-delete zmdi-hc-1x"></i></Button> */}
                         <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
-                                 <h4>Are you sure Delete This User ?</h4>
+                                 <h4>Are you sure Delete This Data ?</h4>
                               </DialogContent>
                               <DialogActions className="bg-light">
                                 <Button className="btn cancelbutton shadow text-white bg-dark" onClick={handleClose}>Cancel</Button>

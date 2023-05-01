@@ -46,11 +46,11 @@ function Mygoods() {
     <>
       <div className="client-dashbord">
         <div className="table-box container mb-2 p-2 shadow card">
-          <h4 className="text-dark mb-4">Tripe Detail</h4>
+          <h4 className="text-dark mb-4">Trip Detail</h4>
           {length === 0 ? (
             <>
               <div class="mx-auto" style={{ width: 350 }}>
-                <h4>don't have any transection yet</h4>
+                <h4>don't have any transaction yet</h4>
               </div>
             </>
           ) : (
@@ -64,12 +64,12 @@ function Mygoods() {
                     <th>Index Id</th>
                     <th>Starting</th>
                     <th>Destination</th>
-                    <th>Drivar Contect</th>
+                    <th>Driver Contact</th>
                     <th>Sending Date</th>
                     <th>Km</th>
                     <th>Price</th>
                     <th>Status</th>
-                    <th>Descri</th>
+                    <th>Description</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -97,7 +97,7 @@ function Mygoods() {
                             </>)}
                             <Dialog className="dialog" open={open} onClose={handleClose} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
                               <DialogContent className="bg-light" id="alert-dialog-description">
-                                 <h4>Are you sure Payment This Transection</h4>
+                                 <h4>Are you sure Payment This Transaction</h4>
                               </DialogContent>
                               <DialogActions className="bg-light">
                                 <Button className="btn payCancel shadow text-white bg-dark" onClick={handleClose}>Cancel</Button>

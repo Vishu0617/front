@@ -56,7 +56,7 @@ function Home({setAdminData,setClientData}) {
           <Link className="homLnk btn btn-outline-light" to="/UserComponent/UserLogin/UserLogin"> User </Link>
           
             <div className="ps-3 call-text text-center mt-3">
-                <label>if you have any query or contect then call this number.</label><br/>
+                <label>if you have any query or contact then call this number.</label><br/>
                 <i className="zmdi zmdi-phone"></i> <label>Call Us </label>
                 <p className="mb-0 fw-bold"><a href="tel:9157167899" alt="call">9157167899</a></p>
             </div>

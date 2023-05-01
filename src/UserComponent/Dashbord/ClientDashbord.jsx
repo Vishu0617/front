@@ -54,7 +54,7 @@ function ClientDashbord() {
             <div className="shadow rounded p-2 ">
                 <div className="d-flex justify-content-between">
                   <img className="me-4" src={img2} alt="trips icon" height={50} width={50} />
-                  <label className="lable1 ">  Vehicale Detail </label>
+                  <label className="lable1 ">  Vehicle Detail </label>
                 </div><hr/>
                 <div className="valueTrips">
                   <span className="ms-1"> {vehicaleLength}</span>
@@ -77,12 +77,12 @@ function ClientDashbord() {
       <br/>
       {/* vehicale detail */}
       <div className="table-box client-main-div border-dark container mb-2 shadow card ">
-        <h4 className="mb-4">Finde youre Roote</h4>
+        <h4 className="mb-4">Find your way</h4>
         <div className="table-responsive">
         {vehicaleLength === 0 ? (
           <>
             <div class="mx-auto me-2" style={{ width: 800 }}>
-              <h4 className=''>There is No Vehicale available</h4>
+              <h4 className=''>There is No Vehicle available</h4>
             </div>
           </>
         ) : (
@@ -91,12 +91,12 @@ function ClientDashbord() {
               <tr>
                 <th>Index Id</th>
                 <th>Name </th>
-                <th>Contect</th>
-                <th>Vehicale Name</th>
-                <th>Vehicale Number</th>
-                <th>Vehicale Capacity</th>
-                <th>Vehicale Starting</th>
-                <th>Vehicale Destination</th>
+                <th>Contact</th>
+                <th>Vehicle Name</th>
+                <th>Vehicle Number</th>
+                <th>Vehicle Capacity</th>
+                <th>Vehicle Starting</th>
+                <th>Vehicle Destination</th>
               </tr>
             </thead>
             {fetchData.map((e,index)=>{
