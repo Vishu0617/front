@@ -7,6 +7,8 @@ import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import Button from '@mui/material/Button';
+import {  toast } from 'react-toastify';
+
 // import logout from "../../img/icon/logout.png"
 
 function AdminHeader() {
@@ -50,6 +52,16 @@ function AdminHeader() {
   const logout=()=>{
     axios.get("http://localhost:3001/logout").then((res) => {
       console.log(res.data.message);
+      toast.success(res.data.message, {
+        position: "top-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
       navigate("/",{replace:true});
     })
     .catch((err) => {

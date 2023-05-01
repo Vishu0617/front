@@ -56,7 +56,7 @@ function UserSignUp() {
       //  toast.success(res.data.message);
        toast.success(res.data.message, {
         position: "top-center",
-        autoClose: 5000,
+        autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -64,13 +64,13 @@ function UserSignUp() {
         progress: undefined,
         theme: "light",
         });
-        navigate("/");
+        navigate("/UserComponent/UserLogin/UserLogin");
       })
       .catch((error) => {
         console.log(error.response.data.error);
         toast.error(error.response.data.error, {
           position: "top-center",
-          autoClose: 5000,
+          autoClose: 2000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,

@@ -4,7 +4,7 @@ import { RiTruckFill } from "react-icons/ri";
 import { Link, useParams } from "react-router-dom";
 import "./AdminDashbord.css";
 import axios from "axios";
-import Footer from "../../Footer/Footer";
+// import Footer from "../../Footer/Footer";
 
 function AdminDashbord() {
   const [fetchGoods, setFetchGoods] = useState([]);
@@ -151,7 +151,7 @@ function AdminDashbord() {
           </div>
         </div>
       </section>
-   <Footer />
+   {/* <Footer /> */}
 
     </>
   );
