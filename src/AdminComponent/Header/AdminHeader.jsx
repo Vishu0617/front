@@ -62,7 +62,7 @@ function AdminHeader() {
         progress: undefined,
         theme: "light",
         });
-      navigate("/",{replace:true});
+        navigate("/",{replace:true});
     })
     .catch((err) => {
       console.log(err);
